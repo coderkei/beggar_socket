@@ -14,6 +14,7 @@ using Microsoft.Win32;
 using System.Management;
 using System.Collections;
 using System.Threading;
+using System.Globalization;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace ChisFlashBurner
@@ -28,18 +29,27 @@ namespace ChisFlashBurner
 
         Dictionary<string, string> serialPorts = new Dictionary<string, string>();
 
+        public CultureInfo systemCulture = CultureInfo.InstalledUICulture;
+
         public Form1()
         {
             InitializeComponent();
-
             label_progress.Text = "";
             label_speed.Text = "";
 
             ToolTip toolTip = new ToolTip();
-            toolTip.SetToolTip(checkBox_mbc5V, "没有必要就别打开了");
+            if (systemCulture.Name.StartsWith("zh"))
+            {
+                toolTip.SetToolTip(checkBox_mbc5V, "没有必要就别打开了");
+            }
+            else
+            {
+                toolTip.SetToolTip(checkBox_mbc5V, "Only enable 5V mode if neccersary");
+            }
 
-            // 搜索串口
-            btn_renewPort_Click(null, null);
+
+                // 搜索串口
+                btn_renewPort_Click(null, null);
 
             CheckForIllegalCrossThreadCalls = false;
 
@@ -163,36 +173,73 @@ namespace ChisFlashBurner
         // 全片擦除
         private void btn_eraseChip_Click(object sender, EventArgs e)
         {
-            if (btn_eraseChip.Text == "全片擦除")
+            if (systemCulture.Name.StartsWith("zh"))
             {
-                if (!openPort())
-                    return;
+                if (btn_eraseChip.Text == "全片擦除")
+                {
+                    if (!openPort())
+                        return;
 
-                printLog("开始擦除");
+                    printLog("开始擦除");
 
-                disableButton(false);
+                    disableButton(false);
 
-                thread = new Thread(new ThreadStart(mission_eraseChip));
-                thread.Start();
+                    thread = new Thread(new ThreadStart(mission_eraseChip));
+                    thread.Start();
+                }
+                else // 取消任务
+                {
+                    port.DiscardOutBuffer();
+                    port.DiscardInBuffer();
+                    Thread.Sleep(123);
+
+                    if (thread != null && thread.IsAlive)
+                        thread.Abort();
+                    if (port != null && port.IsOpen)
+                        port.Close();
+
+                    if (file != null)
+                        file.Close();
+
+                    enableButton();
+
+                    printLog("已取消");
+                }
             }
-            else // 取消任务
+            else
             {
-                port.DiscardOutBuffer();
-                port.DiscardInBuffer();
-                Thread.Sleep(123);
+                if (btn_eraseChip.Text == "Erase All")
+                {
+                    if (!openPort())
+                        return;
 
-                if (thread != null && thread.IsAlive)
-                    thread.Abort();
-                if (port != null && port.IsOpen)
-                    port.Close();
+                    printLog("Erasing");
 
-                if (file != null)
-                    file.Close();
+                    disableButton(false);
 
-                enableButton();
+                    thread = new Thread(new ThreadStart(mission_eraseChip));
+                    thread.Start();
+                }
+                else // 取消任务
+                {
+                    port.DiscardOutBuffer();
+                    port.DiscardInBuffer();
+                    Thread.Sleep(123);
 
-                printLog("已取消");
+                    if (thread != null && thread.IsAlive)
+                        thread.Abort();
+                    if (port != null && port.IsOpen)
+                        port.Close();
+
+                    if (file != null)
+                        file.Close();
+
+                    enableButton();
+
+                    printLog("Aborted");
+                }
             }
+            
         }
 
         // 写入rom
@@ -200,7 +247,14 @@ namespace ChisFlashBurner
         {
             if (!File.Exists(textBox_romPath.Text))
             {
-                printLog("没找到文件");
+                if (systemCulture.Name.StartsWith("zh"))
+                {
+                    printLog("没找到文件");
+                }
+                else
+                {
+                    printLog("File not found.");
+                }
                 return;
             }
 
@@ -222,22 +276,43 @@ namespace ChisFlashBurner
             }
             catch
             {
-                printLog("rom大小有问题");
+                if (systemCulture.Name.StartsWith("zh"))
+                {
+                    printLog("rom大小有问题");
+                }
+                else
+                {
+                    printLog("ROM size is incorrect.");
+                }
                 return;
             }
 
             if (textBox_romPath.Text == "")
             {
-                printLog("文件路径为空");
-                return;
+                if (systemCulture.Name.StartsWith("zh"))
+                {
+                    printLog("文件路径为空");
+                }
+                else
+                {
+                    printLog("The file path is empty.");
+                }
+                    return;
             }
 
             if (!openPort())
                 return;
 
-            printLog("开导");
+            if (systemCulture.Name.StartsWith("zh"))
+            {
+                printLog("开导");
+            }
+            else
+            {
+                printLog("Reading ROM...");
+            }
 
-            disableButton(true);
+                disableButton(true);
 
             thread = new Thread(new ThreadStart(mission_dumpRom));
             thread.Start();
@@ -248,14 +323,29 @@ namespace ChisFlashBurner
         {
             if (!File.Exists(textBox_romPath.Text))
             {
-                printLog("没找到文件");
+                if (systemCulture.Name.StartsWith("zh"))
+                {
+                    printLog("没找到文件");
+                }
+                else
+                {
+                    printLog("File not found.");
+                }
                 return;
             }
 
             if (!openPort())
                 return;
 
-            printLog("开始校验");
+            if (systemCulture.Name.StartsWith("zh"))
+            {
+                printLog("开始校验");
+            }
+            else
+            {
+                printLog("Verifiying ROM...");
+
+            }
 
             disableButton(true);
 
@@ -268,22 +358,49 @@ namespace ChisFlashBurner
         {
             if (!File.Exists(textBox_savePath.Text))
             {
-                printLog("没找到文件");
+                if (systemCulture.Name.StartsWith("zh"))
+                {
+                    printLog("没找到文件");
+                }
+                else
+                {
+                    printLog("File not found.");
+                }
                 return;
             }
 
             if (!openPort())
                 return;
 
-            printLog("开始写入");
+            if (systemCulture.Name.StartsWith("zh"))
+            {
+                printLog("开始写入");
+            }
+            else
+            {
+                printLog("Writing Save...");
+            }
 
             disableButton(true);
 
-            if (comboBox_ramType.Text == "免电")
-                thread = new Thread(new ThreadStart(mission_writeSave_batteryless));
-            else
-                thread = new Thread(new ThreadStart(mission_wrtieSram));
+            if (systemCulture.Name.StartsWith("zh"))
+            {
 
+            }
+            if (systemCulture.Name.StartsWith("zh"))
+            {
+                if (comboBox_ramType.Text == "免电")
+                    thread = new Thread(new ThreadStart(mission_writeSave_batteryless));
+                else
+                    thread = new Thread(new ThreadStart(mission_wrtieSram));
+            }
+            else
+            {
+                if (comboBox_ramType.Text == "Batteryless")
+                    thread = new Thread(new ThreadStart(mission_writeSave_batteryless));
+                else
+                    thread = new Thread(new ThreadStart(mission_wrtieSram));
+            }
 
             thread.Start();
         }
@@ -297,27 +414,58 @@ namespace ChisFlashBurner
             }
             catch
             {
-                printLog("存档大小有问题");
+                if (systemCulture.Name.StartsWith("zh"))
+                {
+                    printLog("存档大小有问题");
+                }
+                else
+                {
+                    printLog("The save size is incorrect.");
+                }
                 return;
             }
 
             if (textBox_savePath.Text == "")
             {
-                printLog("文件路径为空");
+                if (systemCulture.Name.StartsWith("zh"))
+                {
+                    printLog("文件路径为空");
+                }
+                else
+                {
+                    printLog("The file path is empty.");
+                }
                 return;
             }
 
             if (!openPort())
                 return;
 
-            printLog("开导");
+            if (systemCulture.Name.StartsWith("zh"))
+            {
+                printLog("开导");
+            }
+            else
+            {
+                printLog("Exporting Save...");
+            }
 
             disableButton(true);
 
-            if (comboBox_ramType.Text == "免电")
-                thread = new Thread(new ThreadStart(mission_dumpSave_batteryless));
+            if (systemCulture.Name.StartsWith("zh"))
+            {
+                if (comboBox_ramType.Text == "免电")
+                    thread = new Thread(new ThreadStart(mission_dumpSave_batteryless));
+                else
+                    thread = new Thread(new ThreadStart(mission_dumpRam));
+            }
             else
-                thread = new Thread(new ThreadStart(mission_dumpRam));
+            {
+                if (comboBox_ramType.Text == "Batteryless")
+                    thread = new Thread(new ThreadStart(mission_dumpSave_batteryless));
+                else
+                    thread = new Thread(new ThreadStart(mission_dumpRam));
+            }
 
             thread.Start();
         }
@@ -327,22 +475,45 @@ namespace ChisFlashBurner
         {
             if (!File.Exists(textBox_savePath.Text))
             {
-                printLog("没找到文件");
+                if (systemCulture.Name.StartsWith("zh"))
+                {
+                    printLog("没找到文件");
+                }
+                else
+                {
+                    printLog("File not found.");
+                }
                 return;
             }
 
             if (!openPort())
                 return;
 
-            printLog("开始校验");
+            if (systemCulture.Name.StartsWith("zh"))
+            {
+                printLog("开始校验");
+            }
+            else
+            {
+                printLog("Verifying Save...");
+            }
 
             disableButton(true);
 
-            if (comboBox_ramType.Text == "免电")
-                thread = new Thread(new ThreadStart(mission_verifySave_batteryless));
+            if (systemCulture.Name.StartsWith("zh"))
+            {
+                if (comboBox_ramType.Text == "免电")
+                    thread = new Thread(new ThreadStart(mission_verifySave_batteryless));
+                else
+                    thread = new Thread(new ThreadStart(mission_verifyRam));
+            }
             else
-                thread = new Thread(new ThreadStart(mission_verifyRam));
-
+            {
+                if (comboBox_ramType.Text == "Batteryless")
+                    thread = new Thread(new ThreadStart(mission_verifySave_batteryless));
+                else
+                    thread = new Thread(new ThreadStart(mission_verifyRam));
+            }
             thread.Start();
         }
 
@@ -355,51 +526,101 @@ namespace ChisFlashBurner
         // mbc5 全片擦除
         private void btn_eraseChip_mbc5_Click(object sender, EventArgs e)
         {
-
-            if (btn_eraseChip.Text == "全片擦除")
+            if (systemCulture.Name.StartsWith("zh"))
             {
-                if (!openPort())
-                    return;
+                if (btn_eraseChip.Text == "全片擦除")
+                {
+                    if (!openPort())
+                        return;
 
-                printLog("开始擦除");
+                    printLog("开始擦除");
 
-                disableButton(false);
+                    disableButton(false);
 
-                thread = new Thread(new ThreadStart(mission_eraseChip_mbc5));
-                thread.Start();
+                    thread = new Thread(new ThreadStart(mission_eraseChip_mbc5));
+                    thread.Start();
+                }
+                else // 取消任务
+                {
+                    port.DiscardOutBuffer();
+                    port.DiscardInBuffer();
+                    Thread.Sleep(123);
+
+                    if (pwr_5v_enabled)
+                    {
+                        pwr_5v_enabled = false;
+                        port.RtsEnable = true;
+                        port.DtrEnable = true;
+                        port.RtsEnable = false;
+                        port.DtrEnable = false;
+                        Thread.Sleep(10);
+                        cart_power(true, false); //3.3v
+                        printLog("关闭5V");
+                    }
+
+                    if (thread != null && thread.IsAlive)
+                        thread.Abort();
+                    if (port != null && port.IsOpen)
+                        port.Close();
+
+                    enableButton();
+
+                    if (file != null)
+                    {
+                        file.Close();
+                    }
+
+                    printLog("已取消");
+                }
             }
-            else // 取消任务
+            else
             {
-                port.DiscardOutBuffer();
-                port.DiscardInBuffer();
-                Thread.Sleep(123);
-
-                if (pwr_5v_enabled)
+                if (btn_eraseChip.Text == "Erase All")
                 {
-                    pwr_5v_enabled = false;
-                    port.RtsEnable = true;
-                    port.DtrEnable = true;
-                    port.RtsEnable = false;
-                    port.DtrEnable = false;
-                    Thread.Sleep(10);
-                    cart_power(true, false); //3.3v
-                    printLog("关闭5V");
+                    if (!openPort())
+                        return;
+
+                    printLog("Erasing");
+
+                    disableButton(false);
+
+                    thread = new Thread(new ThreadStart(mission_eraseChip_mbc5));
+                    thread.Start();
                 }
-
-                if (thread != null && thread.IsAlive)
-                    thread.Abort();
-                if (port != null && port.IsOpen)
-                    port.Close();
-
-                enableButton();
-
-                if (file != null)
+                else // 取消任务
                 {
-                    file.Close();
-                }
+                    port.DiscardOutBuffer();
+                    port.DiscardInBuffer();
+                    Thread.Sleep(123);
 
-                printLog("已取消");
+                    if (pwr_5v_enabled)
+                    {
+                        pwr_5v_enabled = false;
+                        port.RtsEnable = true;
+                        port.DtrEnable = true;
+                        port.RtsEnable = false;
+                        port.DtrEnable = false;
+                        Thread.Sleep(10);
+                        cart_power(true, false); //3.3v
+                        printLog("Disable 5V");
+                    }
+
+                    if (thread != null && thread.IsAlive)
+                        thread.Abort();
+                    if (port != null && port.IsOpen)
+                        port.Close();
+
+                    enableButton();
+
+                    if (file != null)
+                    {
+                        file.Close();
+                    }
+
+                    printLog("Aborted");
+                }
             }
+
         }
 
         // mbc5 写入rom
@@ -408,7 +629,14 @@ namespace ChisFlashBurner
 
             if (!File.Exists(textBox_romPath.Text))
             {
-                printLog("没找到文件");
+                if (systemCulture.Name.StartsWith("zh"))
+                {
+                    printLog("没找到文件");
+                }
+                else
+                {
+                    printLog("File not found.");
+                }
                 return;
             }
 
@@ -430,20 +658,41 @@ namespace ChisFlashBurner
             }
             catch
             {
-                printLog("rom大小有问题");
+                if (systemCulture.Name.StartsWith("zh"))
+                {
+                    printLog("rom大小有问题");
+                }
+                else
+                {
+                    printLog("ROM size is incorrect.");
+                }
                 return;
             }
 
             if (textBox_romPath.Text == "")
             {
-                printLog("文件路径为空");
+                if (systemCulture.Name.StartsWith("zh"))
+                {
+                    printLog("文件路径为空");
+                }
+                else
+                {
+                    printLog("The file path is empty.");
+                }
                 return;
             }
 
             if (!openPort())
                 return;
 
-            printLog("开导");
+            if (systemCulture.Name.StartsWith("zh"))
+            {
+                printLog("开导");
+            }
+            else
+            {
+                printLog("Exporting ROM...");
+            }
 
             disableButton(true);
 
@@ -457,14 +706,28 @@ namespace ChisFlashBurner
 
             if (!File.Exists(textBox_romPath.Text))
             {
-                printLog("没找到文件");
+                if (systemCulture.Name.StartsWith("zh"))
+                {
+                    printLog("没找到文件");
+                }
+                else
+                {
+                    printLog("File not found.");
+                }
                 return;
             }
 
             if (!openPort())
                 return;
 
-            printLog("开始校验");
+            if (systemCulture.Name.StartsWith("zh"))
+            {
+                printLog("开始校验");
+            }
+            else
+            {
+                printLog("Verifying ROM...");
+            }
 
             disableButton(true);
 
@@ -477,14 +740,28 @@ namespace ChisFlashBurner
         {
             if (!File.Exists(textBox_savePath.Text))
             {
-                printLog("没找到文件");
+                if (systemCulture.Name.StartsWith("zh"))
+                {
+                    printLog("没找到文件");
+                }
+                else
+                {
+                    printLog("File not found.");
+                }
                 return;
             }
 
             if (!openPort())
                 return;
 
-            printLog("开始写入");
+            if (systemCulture.Name.StartsWith("zh"))
+            {
+                printLog("开始写入");
+            }
+            else
+            {
+                printLog("Writing save...");
+            }
 
             disableButton(true);
 
@@ -503,20 +780,41 @@ namespace ChisFlashBurner
             }
             catch
             {
-                printLog("存档大小有问题");
+                if (systemCulture.Name.StartsWith("zh"))
+                {
+                    printLog("存档大小有问题");
+                }
+                else
+                {
+                    printLog("The save size is incorrect.");
+                }
                 return;
             }
 
             if (textBox_savePath.Text == "")
             {
-                printLog("文件路径为空");
+                if (systemCulture.Name.StartsWith("zh"))
+                {
+                    printLog("文件路径为空");
+                }
+                else
+                {
+                    printLog("The file path is empty.");
+                }
                 return;
             }
 
             if (!openPort())
                 return;
 
-            printLog("开导");
+            if (systemCulture.Name.StartsWith("zh"))
+            {
+                printLog("开导");
+            }
+            else
+            {
+                printLog("Exporting save...");
+            }
 
             disableButton(true);
 
@@ -530,14 +828,28 @@ namespace ChisFlashBurner
         {
             if (!File.Exists(textBox_savePath.Text))
             {
-                printLog("没找到文件");
+                if (systemCulture.Name.StartsWith("zh"))
+                {
+                    printLog("没找到文件");
+                }
+                else
+                {
+                    printLog("File not found.");
+                }
                 return;
             }
 
             if (!openPort())
                 return;
 
-            printLog("开始校验");
+            if (systemCulture.Name.StartsWith("zh"))
+            {
+                printLog("开始校验");
+            }
+            else
+            {
+                printLog("Verifying Save...");
+            }
 
             disableButton(true);
 
@@ -734,8 +1046,14 @@ namespace ChisFlashBurner
                     port.Close();
 
                 enableButton();
-
-                printLog("已取消");
+                if (systemCulture.Name.StartsWith("zh"))
+                {
+                    printLog("已取消");
+                }
+                else
+                {
+                    printLog("Aborted");
+                }
             }
             catch { }
         }

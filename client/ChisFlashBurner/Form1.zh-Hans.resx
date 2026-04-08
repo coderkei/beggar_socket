@@ -1,0 +1,661 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btn_browseRom.Text" xml:space="preserve">
+    <value>浏览</value>
+  </data>
+  <data name="btn_readID.Text" xml:space="preserve">
+    <value>读取ID</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="textBox_log.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 193</value>
+  </data>
+  <data name="textBox_log.Size" type="System.Drawing.Size, System.Drawing">
+    <value>645, 256</value>
+  </data>
+  <data name="progressBar_total.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 456</value>
+  </data>
+  <data name="statusStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 490</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 13</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>存档</value>
+  </data>
+  <data name="btn_browseSave.Text" xml:space="preserve">
+    <value>浏览</value>
+  </data>
+  <data name="btn_eraseChip.Text" xml:space="preserve">
+    <value>全片擦除</value>
+  </data>
+  <data name="btn_writeRom.Text" xml:space="preserve">
+    <value>写入ROM</value>
+  </data>
+  <data name="btn_readRom.Text" xml:space="preserve">
+    <value>导出ROM</value>
+  </data>
+  <data name="btn_verifyRom.Text" xml:space="preserve">
+    <value>校验ROM</value>
+  </data>
+  <data name="btn_writeSave.Text" xml:space="preserve">
+    <value>写入存档</value>
+  </data>
+  <data name="btn_readSave.Text" xml:space="preserve">
+    <value>导出存档</value>
+  </data>
+  <data name="btn_verifySave.Text" xml:space="preserve">
+    <value>校验存档</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 13</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>ROM大小(MiB)</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 13</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>存档大小(KiB)</value>
+  </data>
+  <data name="btn_renewPort.Text" xml:space="preserve">
+    <value>刷新</value>
+  </data>
+  <data name="comboBox_ramType.Items3" xml:space="preserve">
+    <value>免电</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items" xml:space="preserve">
+    <value>整卡</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items1" xml:space="preserve">
+    <value>合卡菜单</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items2" xml:space="preserve">
+    <value>合卡8M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items3" xml:space="preserve">
+    <value>合卡12M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items4" xml:space="preserve">
+    <value>合卡16M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items5" xml:space="preserve">
+    <value>合卡20M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items6" xml:space="preserve">
+    <value>合卡24M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items7" xml:space="preserve">
+    <value>合卡28M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items8" xml:space="preserve">
+    <value>合卡32M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items9" xml:space="preserve">
+    <value>合卡36M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items10" xml:space="preserve">
+    <value>合卡40M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items11" xml:space="preserve">
+    <value>合卡44M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items12" xml:space="preserve">
+    <value>合卡48M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items13" xml:space="preserve">
+    <value>合卡52M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items14" xml:space="preserve">
+    <value>合卡56M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items15" xml:space="preserve">
+    <value>合卡60M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items16" xml:space="preserve">
+    <value>合卡64M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items17" xml:space="preserve">
+    <value>合卡68M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items18" xml:space="preserve">
+    <value>合卡72M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items19" xml:space="preserve">
+    <value>合卡76M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items20" xml:space="preserve">
+    <value>合卡80M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items21" xml:space="preserve">
+    <value>合卡84M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items22" xml:space="preserve">
+    <value>合卡88M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items23" xml:space="preserve">
+    <value>合卡92M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items24" xml:space="preserve">
+    <value>合卡96M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items25" xml:space="preserve">
+    <value>合卡100M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items26" xml:space="preserve">
+    <value>合卡104M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items27" xml:space="preserve">
+    <value>合卡108M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items28" xml:space="preserve">
+    <value>合卡112M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items29" xml:space="preserve">
+    <value>合卡116M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items30" xml:space="preserve">
+    <value>合卡120M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items31" xml:space="preserve">
+    <value>合卡124M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items32" xml:space="preserve">
+    <value>合卡128M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items33" xml:space="preserve">
+    <value>合卡132M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items34" xml:space="preserve">
+    <value>合卡136M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items35" xml:space="preserve">
+    <value>合卡140M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items36" xml:space="preserve">
+    <value>合卡144M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items37" xml:space="preserve">
+    <value>合卡148M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items38" xml:space="preserve">
+    <value>合卡152M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items39" xml:space="preserve">
+    <value>合卡156M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items40" xml:space="preserve">
+    <value>合卡160M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items41" xml:space="preserve">
+    <value>合卡164M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items42" xml:space="preserve">
+    <value>合卡168M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items43" xml:space="preserve">
+    <value>合卡172M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items44" xml:space="preserve">
+    <value>合卡176M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items45" xml:space="preserve">
+    <value>合卡180M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items46" xml:space="preserve">
+    <value>合卡184M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items47" xml:space="preserve">
+    <value>合卡188M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items48" xml:space="preserve">
+    <value>合卡192M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items49" xml:space="preserve">
+    <value>合卡196M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items50" xml:space="preserve">
+    <value>合卡200M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items51" xml:space="preserve">
+    <value>合卡204M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items52" xml:space="preserve">
+    <value>合卡208M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items53" xml:space="preserve">
+    <value>合卡212M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items54" xml:space="preserve">
+    <value>合卡216M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items55" xml:space="preserve">
+    <value>合卡220M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items56" xml:space="preserve">
+    <value>合卡224M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items57" xml:space="preserve">
+    <value>合卡228M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items58" xml:space="preserve">
+    <value>合卡232M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items59" xml:space="preserve">
+    <value>合卡236M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items60" xml:space="preserve">
+    <value>合卡240M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items61" xml:space="preserve">
+    <value>合卡244M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items62" xml:space="preserve">
+    <value>合卡248M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items63" xml:space="preserve">
+    <value>合卡252M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items64" xml:space="preserve">
+    <value>合卡256M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items65" xml:space="preserve">
+    <value>合卡260M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items66" xml:space="preserve">
+    <value>合卡264M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items67" xml:space="preserve">
+    <value>合卡268M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items68" xml:space="preserve">
+    <value>合卡272M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items69" xml:space="preserve">
+    <value>合卡276M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items70" xml:space="preserve">
+    <value>合卡280M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items71" xml:space="preserve">
+    <value>合卡284M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items72" xml:space="preserve">
+    <value>合卡288M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items73" xml:space="preserve">
+    <value>合卡292M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items74" xml:space="preserve">
+    <value>合卡296M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items75" xml:space="preserve">
+    <value>合卡300M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items76" xml:space="preserve">
+    <value>合卡304M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items77" xml:space="preserve">
+    <value>合卡308M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items78" xml:space="preserve">
+    <value>合卡312M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items79" xml:space="preserve">
+    <value>合卡316M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items80" xml:space="preserve">
+    <value>合卡320M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items81" xml:space="preserve">
+    <value>合卡324M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items82" xml:space="preserve">
+    <value>合卡328M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items83" xml:space="preserve">
+    <value>合卡332M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items84" xml:space="preserve">
+    <value>合卡336M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items85" xml:space="preserve">
+    <value>合卡340M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items86" xml:space="preserve">
+    <value>合卡344M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items87" xml:space="preserve">
+    <value>合卡348M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items88" xml:space="preserve">
+    <value>合卡352M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items89" xml:space="preserve">
+    <value>合卡356M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items90" xml:space="preserve">
+    <value>合卡360M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items91" xml:space="preserve">
+    <value>合卡364M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items92" xml:space="preserve">
+    <value>合卡368M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items93" xml:space="preserve">
+    <value>合卡372M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items94" xml:space="preserve">
+    <value>合卡376M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items95" xml:space="preserve">
+    <value>合卡380M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items96" xml:space="preserve">
+    <value>合卡384M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items97" xml:space="preserve">
+    <value>合卡388M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items98" xml:space="preserve">
+    <value>合卡392M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items99" xml:space="preserve">
+    <value>合卡396M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items100" xml:space="preserve">
+    <value>合卡400M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items101" xml:space="preserve">
+    <value>合卡404M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items102" xml:space="preserve">
+    <value>合卡408M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items103" xml:space="preserve">
+    <value>合卡412M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items104" xml:space="preserve">
+    <value>合卡416M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items105" xml:space="preserve">
+    <value>合卡420M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items106" xml:space="preserve">
+    <value>合卡424M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items107" xml:space="preserve">
+    <value>合卡428M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items108" xml:space="preserve">
+    <value>合卡432M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items109" xml:space="preserve">
+    <value>合卡436M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items110" xml:space="preserve">
+    <value>合卡440M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items111" xml:space="preserve">
+    <value>合卡444M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items112" xml:space="preserve">
+    <value>合卡448M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items113" xml:space="preserve">
+    <value>合卡452M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items114" xml:space="preserve">
+    <value>合卡456M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items115" xml:space="preserve">
+    <value>合卡460M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items116" xml:space="preserve">
+    <value>合卡464M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items117" xml:space="preserve">
+    <value>合卡468M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items118" xml:space="preserve">
+    <value>合卡472M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items119" xml:space="preserve">
+    <value>合卡476M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items120" xml:space="preserve">
+    <value>合卡480M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items121" xml:space="preserve">
+    <value>合卡484M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items122" xml:space="preserve">
+    <value>合卡488M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items123" xml:space="preserve">
+    <value>合卡492M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items124" xml:space="preserve">
+    <value>合卡496M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items125" xml:space="preserve">
+    <value>合卡500M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items126" xml:space="preserve">
+    <value>合卡504M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items127" xml:space="preserve">
+    <value>合卡508M</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items128" xml:space="preserve">
+    <value>合卡512M</value>
+  </data>
+  <data name="btn_eraseChip_mbc5.Text" xml:space="preserve">
+    <value>全片擦除</value>
+  </data>
+  <data name="comboBox_mbc5MultiCartSelect.Items" xml:space="preserve">
+    <value>整卡</value>
+  </data>
+  <data name="comboBox_mbc5MultiCartSelect.Items1" xml:space="preserve">
+    <value>菜单</value>
+  </data>
+  <data name="comboBox_mbc5MultiCartSelect.Items2" xml:space="preserve">
+    <value>合卡 1/4</value>
+  </data>
+  <data name="comboBox_mbc5MultiCartSelect.Items3" xml:space="preserve">
+    <value>合卡 2/4</value>
+  </data>
+  <data name="comboBox_mbc5MultiCartSelect.Items4" xml:space="preserve">
+    <value>合卡 3/4</value>
+  </data>
+  <data name="comboBox_mbc5MultiCartSelect.Items5" xml:space="preserve">
+    <value>合卡 4/4</value>
+  </data>
+  <data name="btn_verifyRom_mbc5.Text" xml:space="preserve">
+    <value>校验ROM</value>
+  </data>
+  <data name="btn_verifySave_mbc5.Text" xml:space="preserve">
+    <value>校验存档</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 13</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>存档大小(KiB)</value>
+  </data>
+  <data name="btn_readRom_mbc5.Text" xml:space="preserve">
+    <value>导出ROM</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 13</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>ROM大小(MiB)</value>
+  </data>
+  <data name="btn_readSave_mbc5.Text" xml:space="preserve">
+    <value>导出存档</value>
+  </data>
+  <data name="btn_writeRom_mbc5.Text" xml:space="preserve">
+    <value>写入ROM</value>
+  </data>
+  <data name="btn_writeSave_mbc5.Text" xml:space="preserve">
+    <value>写入存档</value>
+  </data>
+  <data name="btn_cancel.Text" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="btn_rumbleTest_gba.Text" xml:space="preserve">
+    <value>震动测试</value>
+  </data>
+  <data name="btn_setRTC_mbc.Text" xml:space="preserve">
+    <value>修改时钟</value>
+  </data>
+  <data name="btn_setRTC_gba.Text" xml:space="preserve">
+    <value>修改时钟</value>
+  </data>
+  <data name="btn_unlockPPB_mbc5.Text" xml:space="preserve">
+    <value>解锁ppb</value>
+  </data>
+  <data name="btn_unlockPPB_gba.Text" xml:space="preserve">
+    <value>解锁ppb</value>
+  </data>
+  <data name="tabPage3.Text" xml:space="preserve">
+    <value>工具</value>
+  </data>
+  <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 81</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>如果要导出到新的 ROM 或存档，请手动输入新路径。</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>669, 512</value>
+  </data>
+  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 65</value>
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>226, 13</value>
+  </data>
+</root>

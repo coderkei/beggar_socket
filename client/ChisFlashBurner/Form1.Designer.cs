@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btn_browseRom = new System.Windows.Forms.Button();
             this.textBox_romPath = new System.Windows.Forms.TextBox();
             this.comboBox_com = new System.Windows.Forms.ComboBox();
@@ -85,6 +86,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.btn_unlockPPB_gba = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
             this.statusStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -94,71 +96,43 @@
             // 
             // btn_browseRom
             // 
-            this.btn_browseRom.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_browseRom.Location = new System.Drawing.Point(468, 10);
+            resources.ApplyResources(this.btn_browseRom, "btn_browseRom");
             this.btn_browseRom.Name = "btn_browseRom";
-            this.btn_browseRom.Size = new System.Drawing.Size(60, 23);
-            this.btn_browseRom.TabIndex = 0;
-            this.btn_browseRom.Text = "浏览";
             this.btn_browseRom.UseVisualStyleBackColor = true;
             this.btn_browseRom.Click += new System.EventHandler(this.btn_browseRom_Click);
             // 
             // textBox_romPath
             // 
-            this.textBox_romPath.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox_romPath.Location = new System.Drawing.Point(46, 12);
+            resources.ApplyResources(this.textBox_romPath, "textBox_romPath");
             this.textBox_romPath.Name = "textBox_romPath";
-            this.textBox_romPath.Size = new System.Drawing.Size(416, 21);
-            this.textBox_romPath.TabIndex = 1;
             // 
             // comboBox_com
             // 
-            this.comboBox_com.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.comboBox_com, "comboBox_com");
             this.comboBox_com.BackColor = System.Drawing.SystemColors.Window;
             this.comboBox_com.DropDownWidth = 130;
-            this.comboBox_com.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.comboBox_com.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.comboBox_com.ForeColor = System.Drawing.SystemColors.InfoText;
             this.comboBox_com.FormattingEnabled = true;
-            this.comboBox_com.Location = new System.Drawing.Point(534, 12);
             this.comboBox_com.Name = "comboBox_com";
-            this.comboBox_com.Size = new System.Drawing.Size(123, 20);
-            this.comboBox_com.TabIndex = 2;
             // 
             // btn_readID
             // 
-            this.btn_readID.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_readID.Location = new System.Drawing.Point(597, 39);
+            resources.ApplyResources(this.btn_readID, "btn_readID");
             this.btn_readID.Name = "btn_readID";
-            this.btn_readID.Size = new System.Drawing.Size(60, 23);
-            this.btn_readID.TabIndex = 3;
-            this.btn_readID.Text = "读取ID";
             this.btn_readID.UseVisualStyleBackColor = true;
             this.btn_readID.Click += new System.EventHandler(this.btn_readID_Click);
             // 
             // textBox_log
             // 
-            this.textBox_log.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.textBox_log, "textBox_log");
             this.textBox_log.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox_log.Location = new System.Drawing.Point(12, 172);
-            this.textBox_log.Multiline = true;
             this.textBox_log.Name = "textBox_log";
             this.textBox_log.ReadOnly = true;
-            this.textBox_log.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBox_log.Size = new System.Drawing.Size(645, 243);
-            this.textBox_log.TabIndex = 4;
             // 
             // progressBar_total
             // 
-            this.progressBar_total.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.progressBar_total.Location = new System.Drawing.Point(12, 421);
+            resources.ApplyResources(this.progressBar_total, "progressBar_total");
             this.progressBar_total.Name = "progressBar_total";
-            this.progressBar_total.Size = new System.Drawing.Size(645, 23);
-            this.progressBar_total.TabIndex = 7;
             // 
             // statusStrip1
             // 
@@ -167,187 +141,121 @@
             this.label_progress,
             this.toolStripStatusLabel2,
             this.label_speed});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 451);
+            resources.ApplyResources(this.statusStrip1, "statusStrip1");
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(669, 22);
-            this.statusStrip1.TabIndex = 10;
-            this.statusStrip1.Text = "statusStrip1";
             // 
             // label_progress
             // 
             this.label_progress.Name = "label_progress";
-            this.label_progress.Size = new System.Drawing.Size(131, 17);
-            this.label_progress.Text = "toolStripStatusLabel1";
+            resources.ApplyResources(this.label_progress, "label_progress");
             // 
             // toolStripStatusLabel2
             // 
             this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            this.toolStripStatusLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.toolStripStatusLabel2.Size = new System.Drawing.Size(510, 17);
+            resources.ApplyResources(this.toolStripStatusLabel2, "toolStripStatusLabel2");
             this.toolStripStatusLabel2.Spring = true;
             // 
             // label_speed
             // 
             this.label_speed.Name = "label_speed";
-            this.label_speed.Size = new System.Drawing.Size(13, 17);
-            this.label_speed.Text = "_";
+            resources.ApplyResources(this.label_speed, "label_speed");
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(10, 14);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(23, 12);
-            this.label2.TabIndex = 11;
-            this.label2.Text = "ROM";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(11, 42);
+            resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(29, 12);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "存档";
             // 
             // textBox_savePath
             // 
-            this.textBox_savePath.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox_savePath.Location = new System.Drawing.Point(46, 39);
+            resources.ApplyResources(this.textBox_savePath, "textBox_savePath");
             this.textBox_savePath.Name = "textBox_savePath";
-            this.textBox_savePath.Size = new System.Drawing.Size(416, 21);
-            this.textBox_savePath.TabIndex = 13;
             // 
             // btn_browseSave
             // 
-            this.btn_browseSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_browseSave.Location = new System.Drawing.Point(468, 38);
+            resources.ApplyResources(this.btn_browseSave, "btn_browseSave");
             this.btn_browseSave.Name = "btn_browseSave";
-            this.btn_browseSave.Size = new System.Drawing.Size(60, 23);
-            this.btn_browseSave.TabIndex = 14;
-            this.btn_browseSave.Text = "浏览";
             this.btn_browseSave.UseVisualStyleBackColor = true;
             this.btn_browseSave.Click += new System.EventHandler(this.btn_browseSave_Click);
             // 
             // btn_eraseChip
             // 
-            this.btn_eraseChip.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_eraseChip.Location = new System.Drawing.Point(556, 11);
+            resources.ApplyResources(this.btn_eraseChip, "btn_eraseChip");
             this.btn_eraseChip.Name = "btn_eraseChip";
-            this.btn_eraseChip.Size = new System.Drawing.Size(75, 52);
-            this.btn_eraseChip.TabIndex = 15;
-            this.btn_eraseChip.Text = "全片擦除";
             this.btn_eraseChip.UseVisualStyleBackColor = true;
             this.btn_eraseChip.Click += new System.EventHandler(this.btn_eraseChip_Click);
             // 
             // btn_writeRom
             // 
-            this.btn_writeRom.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_writeRom.Location = new System.Drawing.Point(313, 11);
+            resources.ApplyResources(this.btn_writeRom, "btn_writeRom");
             this.btn_writeRom.Name = "btn_writeRom";
-            this.btn_writeRom.Size = new System.Drawing.Size(75, 23);
-            this.btn_writeRom.TabIndex = 16;
-            this.btn_writeRom.Text = "写入ROM";
             this.btn_writeRom.UseVisualStyleBackColor = true;
             this.btn_writeRom.Click += new System.EventHandler(this.btn_writeRom_Click);
             // 
             // btn_readRom
             // 
-            this.btn_readRom.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_readRom.Location = new System.Drawing.Point(394, 11);
+            resources.ApplyResources(this.btn_readRom, "btn_readRom");
             this.btn_readRom.Name = "btn_readRom";
-            this.btn_readRom.Size = new System.Drawing.Size(75, 23);
-            this.btn_readRom.TabIndex = 17;
-            this.btn_readRom.Text = "导出ROM";
             this.btn_readRom.UseVisualStyleBackColor = true;
             this.btn_readRom.Click += new System.EventHandler(this.btn_readRom_Click);
             // 
             // btn_verifyRom
             // 
-            this.btn_verifyRom.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_verifyRom.Location = new System.Drawing.Point(475, 11);
+            resources.ApplyResources(this.btn_verifyRom, "btn_verifyRom");
             this.btn_verifyRom.Name = "btn_verifyRom";
-            this.btn_verifyRom.Size = new System.Drawing.Size(75, 23);
-            this.btn_verifyRom.TabIndex = 18;
-            this.btn_verifyRom.Text = "校验ROM";
             this.btn_verifyRom.UseVisualStyleBackColor = true;
             this.btn_verifyRom.Click += new System.EventHandler(this.btn_verifyRom_Click);
             // 
             // btn_writeSave
             // 
-            this.btn_writeSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_writeSave.Location = new System.Drawing.Point(313, 40);
+            resources.ApplyResources(this.btn_writeSave, "btn_writeSave");
             this.btn_writeSave.Name = "btn_writeSave";
-            this.btn_writeSave.Size = new System.Drawing.Size(75, 23);
-            this.btn_writeSave.TabIndex = 19;
-            this.btn_writeSave.Text = "写入存档";
             this.btn_writeSave.UseVisualStyleBackColor = true;
             this.btn_writeSave.Click += new System.EventHandler(this.btn_writeSave_Click);
             // 
             // btn_readSave
             // 
-            this.btn_readSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_readSave.Location = new System.Drawing.Point(394, 40);
+            resources.ApplyResources(this.btn_readSave, "btn_readSave");
             this.btn_readSave.Name = "btn_readSave";
-            this.btn_readSave.Size = new System.Drawing.Size(75, 23);
-            this.btn_readSave.TabIndex = 20;
-            this.btn_readSave.Text = "导出存档";
             this.btn_readSave.UseVisualStyleBackColor = true;
             this.btn_readSave.Click += new System.EventHandler(this.btn_readSave_Click);
             // 
             // btn_verifySave
             // 
-            this.btn_verifySave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_verifySave.Location = new System.Drawing.Point(475, 40);
+            resources.ApplyResources(this.btn_verifySave, "btn_verifySave");
             this.btn_verifySave.Name = "btn_verifySave";
-            this.btn_verifySave.Size = new System.Drawing.Size(75, 23);
-            this.btn_verifySave.TabIndex = 21;
-            this.btn_verifySave.Text = "校验存档";
             this.btn_verifySave.UseVisualStyleBackColor = true;
             this.btn_verifySave.Click += new System.EventHandler(this.btn_verifySave_Click);
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 16);
+            resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(77, 12);
-            this.label4.TabIndex = 22;
-            this.label4.Text = "ROM大小(MiB)";
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 45);
+            resources.ApplyResources(this.label5, "label5");
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(83, 12);
-            this.label5.TabIndex = 23;
-            this.label5.Text = "存档大小(KiB)";
             // 
             // comboBox_saveSize
             // 
-            this.comboBox_saveSize.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.comboBox_saveSize, "comboBox_saveSize");
             this.comboBox_saveSize.DropDownWidth = 55;
             this.comboBox_saveSize.FormattingEnabled = true;
             this.comboBox_saveSize.Items.AddRange(new object[] {
-            "64",
-            "128"});
-            this.comboBox_saveSize.Location = new System.Drawing.Point(95, 42);
+            resources.GetString("comboBox_saveSize.Items"),
+            resources.GetString("comboBox_saveSize.Items1")});
             this.comboBox_saveSize.Name = "comboBox_saveSize";
-            this.comboBox_saveSize.Size = new System.Drawing.Size(112, 20);
-            this.comboBox_saveSize.TabIndex = 24;
             // 
             // comboBox_romSize
             // 
-            this.comboBox_romSize.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.comboBox_romSize, "comboBox_romSize");
             this.comboBox_romSize.FormattingEnabled = true;
-            this.comboBox_romSize.Location = new System.Drawing.Point(95, 13);
             this.comboBox_romSize.Name = "comboBox_romSize";
-            this.comboBox_romSize.Size = new System.Drawing.Size(112, 20);
-            this.comboBox_romSize.TabIndex = 25;
             // 
             // tmr_showSpeed
             // 
@@ -357,43 +265,32 @@
             // 
             // btn_renewPort
             // 
-            this.btn_renewPort.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_renewPort.Location = new System.Drawing.Point(534, 39);
+            resources.ApplyResources(this.btn_renewPort, "btn_renewPort");
             this.btn_renewPort.Name = "btn_renewPort";
-            this.btn_renewPort.Size = new System.Drawing.Size(60, 23);
-            this.btn_renewPort.TabIndex = 26;
-            this.btn_renewPort.Text = "刷新";
             this.btn_renewPort.UseVisualStyleBackColor = true;
             this.btn_renewPort.Click += new System.EventHandler(this.btn_renewPort_Click);
             // 
             // comboBox_ramType
             // 
-            this.comboBox_ramType.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.comboBox_ramType, "comboBox_ramType");
             this.comboBox_ramType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox_ramType.DropDownWidth = 53;
             this.comboBox_ramType.FormattingEnabled = true;
             this.comboBox_ramType.Items.AddRange(new object[] {
-            "FLASH",
-            "SRAM",
-            "FRAM",
-            "免电"});
-            this.comboBox_ramType.Location = new System.Drawing.Point(213, 42);
+            resources.GetString("comboBox_ramType.Items"),
+            resources.GetString("comboBox_ramType.Items1"),
+            resources.GetString("comboBox_ramType.Items2"),
+            resources.GetString("comboBox_ramType.Items3")});
             this.comboBox_ramType.Name = "comboBox_ramType";
-            this.comboBox_ramType.Size = new System.Drawing.Size(94, 20);
-            this.comboBox_ramType.TabIndex = 27;
             // 
             // tabControl1
             // 
-            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Location = new System.Drawing.Point(12, 68);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(645, 98);
-            this.tabControl1.TabIndex = 28;
             // 
             // tabPage1
             // 
@@ -410,154 +307,147 @@
             this.tabPage1.Controls.Add(this.btn_readSave);
             this.tabPage1.Controls.Add(this.btn_writeRom);
             this.tabPage1.Controls.Add(this.btn_writeSave);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            resources.ApplyResources(this.tabPage1, "tabPage1");
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(637, 72);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "GBA";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // comboBox_gbaMultiCartSelect
             // 
-            this.comboBox_gbaMultiCartSelect.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.comboBox_gbaMultiCartSelect, "comboBox_gbaMultiCartSelect");
             this.comboBox_gbaMultiCartSelect.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox_gbaMultiCartSelect.DropDownWidth = 100;
             this.comboBox_gbaMultiCartSelect.FormattingEnabled = true;
             this.comboBox_gbaMultiCartSelect.Items.AddRange(new object[] {
-            "整卡",
-            "合卡菜单",
-            "合卡8M",
-            "合卡12M",
-            "合卡16M",
-            "合卡20M",
-            "合卡24M",
-            "合卡28M",
-            "合卡32M",
-            "合卡36M",
-            "合卡40M",
-            "合卡44M",
-            "合卡48M",
-            "合卡52M",
-            "合卡56M",
-            "合卡60M",
-            "合卡64M",
-            "合卡68M",
-            "合卡72M",
-            "合卡76M",
-            "合卡80M",
-            "合卡84M",
-            "合卡88M",
-            "合卡92M",
-            "合卡96M",
-            "合卡100M",
-            "合卡104M",
-            "合卡108M",
-            "合卡112M",
-            "合卡116M",
-            "合卡120M",
-            "合卡124M",
-            "合卡128M",
-            "合卡132M",
-            "合卡136M",
-            "合卡140M",
-            "合卡144M",
-            "合卡148M",
-            "合卡152M",
-            "合卡156M",
-            "合卡160M",
-            "合卡164M",
-            "合卡168M",
-            "合卡172M",
-            "合卡176M",
-            "合卡180M",
-            "合卡184M",
-            "合卡188M",
-            "合卡192M",
-            "合卡196M",
-            "合卡200M",
-            "合卡204M",
-            "合卡208M",
-            "合卡212M",
-            "合卡216M",
-            "合卡220M",
-            "合卡224M",
-            "合卡228M",
-            "合卡232M",
-            "合卡236M",
-            "合卡240M",
-            "合卡244M",
-            "合卡248M",
-            "合卡252M",
-            "合卡256M",
-            "合卡260M",
-            "合卡264M",
-            "合卡268M",
-            "合卡272M",
-            "合卡276M",
-            "合卡280M",
-            "合卡284M",
-            "合卡288M",
-            "合卡292M",
-            "合卡296M",
-            "合卡300M",
-            "合卡304M",
-            "合卡308M",
-            "合卡312M",
-            "合卡316M",
-            "合卡320M",
-            "合卡324M",
-            "合卡328M",
-            "合卡332M",
-            "合卡336M",
-            "合卡340M",
-            "合卡344M",
-            "合卡348M",
-            "合卡352M",
-            "合卡356M",
-            "合卡360M",
-            "合卡364M",
-            "合卡368M",
-            "合卡372M",
-            "合卡376M",
-            "合卡380M",
-            "合卡384M",
-            "合卡388M",
-            "合卡392M",
-            "合卡396M",
-            "合卡400M",
-            "合卡404M",
-            "合卡408M",
-            "合卡412M",
-            "合卡416M",
-            "合卡420M",
-            "合卡424M",
-            "合卡428M",
-            "合卡432M",
-            "合卡436M",
-            "合卡440M",
-            "合卡444M",
-            "合卡448M",
-            "合卡452M",
-            "合卡456M",
-            "合卡460M",
-            "合卡464M",
-            "合卡468M",
-            "合卡472M",
-            "合卡476M",
-            "合卡480M",
-            "合卡484M",
-            "合卡488M",
-            "合卡492M",
-            "合卡496M",
-            "合卡500M",
-            "合卡504M",
-            "合卡508M",
-            "合卡512M"});
-            this.comboBox_gbaMultiCartSelect.Location = new System.Drawing.Point(213, 13);
+            resources.GetString("comboBox_gbaMultiCartSelect.Items"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items1"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items2"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items3"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items4"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items5"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items6"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items7"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items8"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items9"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items10"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items11"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items12"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items13"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items14"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items15"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items16"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items17"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items18"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items19"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items20"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items21"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items22"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items23"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items24"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items25"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items26"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items27"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items28"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items29"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items30"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items31"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items32"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items33"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items34"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items35"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items36"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items37"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items38"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items39"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items40"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items41"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items42"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items43"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items44"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items45"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items46"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items47"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items48"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items49"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items50"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items51"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items52"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items53"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items54"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items55"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items56"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items57"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items58"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items59"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items60"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items61"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items62"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items63"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items64"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items65"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items66"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items67"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items68"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items69"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items70"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items71"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items72"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items73"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items74"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items75"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items76"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items77"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items78"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items79"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items80"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items81"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items82"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items83"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items84"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items85"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items86"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items87"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items88"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items89"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items90"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items91"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items92"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items93"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items94"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items95"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items96"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items97"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items98"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items99"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items100"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items101"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items102"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items103"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items104"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items105"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items106"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items107"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items108"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items109"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items110"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items111"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items112"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items113"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items114"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items115"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items116"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items117"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items118"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items119"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items120"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items121"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items122"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items123"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items124"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items125"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items126"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items127"),
+            resources.GetString("comboBox_gbaMultiCartSelect.Items128")});
             this.comboBox_gbaMultiCartSelect.Name = "comboBox_gbaMultiCartSelect";
-            this.comboBox_gbaMultiCartSelect.Size = new System.Drawing.Size(94, 20);
-            this.comboBox_gbaMultiCartSelect.TabIndex = 40;
             // 
             // tabPage2
             // 
@@ -576,208 +466,146 @@
             this.tabPage2.Controls.Add(this.btn_readSave_mbc5);
             this.tabPage2.Controls.Add(this.btn_writeRom_mbc5);
             this.tabPage2.Controls.Add(this.btn_writeSave_mbc5);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            resources.ApplyResources(this.tabPage2, "tabPage2");
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(637, 72);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "MBC3/5";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // checkBox_mbc5V
             // 
-            this.checkBox_mbc5V.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.checkBox_mbc5V.AutoSize = true;
-            this.checkBox_mbc5V.Location = new System.Drawing.Point(247, 45);
+            resources.ApplyResources(this.checkBox_mbc5V, "checkBox_mbc5V");
             this.checkBox_mbc5V.Name = "checkBox_mbc5V";
-            this.checkBox_mbc5V.Size = new System.Drawing.Size(36, 16);
-            this.checkBox_mbc5V.TabIndex = 42;
-            this.checkBox_mbc5V.Text = "5V";
             this.checkBox_mbc5V.UseVisualStyleBackColor = true;
             // 
             // comboBox_mbcType
             // 
-            this.comboBox_mbcType.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.comboBox_mbcType, "comboBox_mbcType");
             this.comboBox_mbcType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox_mbcType.DropDownWidth = 60;
             this.comboBox_mbcType.FormattingEnabled = true;
             this.comboBox_mbcType.Items.AddRange(new object[] {
-            "MBC3",
-            "MBC5"});
-            this.comboBox_mbcType.Location = new System.Drawing.Point(246, 13);
+            resources.GetString("comboBox_mbcType.Items"),
+            resources.GetString("comboBox_mbcType.Items1")});
             this.comboBox_mbcType.Name = "comboBox_mbcType";
-            this.comboBox_mbcType.Size = new System.Drawing.Size(61, 20);
-            this.comboBox_mbcType.TabIndex = 41;
             // 
             // comboBox_mbc5RamType
             // 
-            this.comboBox_mbc5RamType.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.comboBox_mbc5RamType, "comboBox_mbc5RamType");
             this.comboBox_mbc5RamType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox_mbc5RamType.DropDownWidth = 100;
             this.comboBox_mbc5RamType.FormattingEnabled = true;
             this.comboBox_mbc5RamType.Items.AddRange(new object[] {
-            "SRAM",
-            "FRAM"});
-            this.comboBox_mbc5RamType.Location = new System.Drawing.Point(163, 42);
+            resources.GetString("comboBox_mbc5RamType.Items"),
+            resources.GetString("comboBox_mbc5RamType.Items1")});
             this.comboBox_mbc5RamType.Name = "comboBox_mbc5RamType";
-            this.comboBox_mbc5RamType.Size = new System.Drawing.Size(77, 20);
-            this.comboBox_mbc5RamType.TabIndex = 40;
             // 
             // btn_eraseChip_mbc5
             // 
-            this.btn_eraseChip_mbc5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_eraseChip_mbc5.Location = new System.Drawing.Point(556, 11);
+            resources.ApplyResources(this.btn_eraseChip_mbc5, "btn_eraseChip_mbc5");
             this.btn_eraseChip_mbc5.Name = "btn_eraseChip_mbc5";
-            this.btn_eraseChip_mbc5.Size = new System.Drawing.Size(75, 52);
-            this.btn_eraseChip_mbc5.TabIndex = 28;
-            this.btn_eraseChip_mbc5.Text = "全片擦除";
             this.btn_eraseChip_mbc5.UseVisualStyleBackColor = true;
             this.btn_eraseChip_mbc5.Click += new System.EventHandler(this.btn_eraseChip_mbc5_Click);
             // 
             // comboBox_mbc5MultiCartSelect
             // 
-            this.comboBox_mbc5MultiCartSelect.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.comboBox_mbc5MultiCartSelect, "comboBox_mbc5MultiCartSelect");
             this.comboBox_mbc5MultiCartSelect.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox_mbc5MultiCartSelect.DropDownWidth = 100;
             this.comboBox_mbc5MultiCartSelect.FormattingEnabled = true;
             this.comboBox_mbc5MultiCartSelect.Items.AddRange(new object[] {
-            "整卡",
-            "菜单",
-            "合卡 1/4",
-            "合卡 2/4",
-            "合卡 3/4",
-            "合卡 4/4",
-            "5/16  (max)",
-            "6/16  (max)",
-            "7/16  (max)",
-            "8/16  (max)",
-            "9/16  (max)",
-            "10/16 (max)",
-            "11/16 (max)",
-            "12/16 (max)",
-            "13/16 (max)",
-            "14/16 (max)",
-            "15/16 (max)",
-            "16/16 (max)"});
-            this.comboBox_mbc5MultiCartSelect.Location = new System.Drawing.Point(163, 13);
+            resources.GetString("comboBox_mbc5MultiCartSelect.Items"),
+            resources.GetString("comboBox_mbc5MultiCartSelect.Items1"),
+            resources.GetString("comboBox_mbc5MultiCartSelect.Items2"),
+            resources.GetString("comboBox_mbc5MultiCartSelect.Items3"),
+            resources.GetString("comboBox_mbc5MultiCartSelect.Items4"),
+            resources.GetString("comboBox_mbc5MultiCartSelect.Items5"),
+            resources.GetString("comboBox_mbc5MultiCartSelect.Items6"),
+            resources.GetString("comboBox_mbc5MultiCartSelect.Items7"),
+            resources.GetString("comboBox_mbc5MultiCartSelect.Items8"),
+            resources.GetString("comboBox_mbc5MultiCartSelect.Items9"),
+            resources.GetString("comboBox_mbc5MultiCartSelect.Items10"),
+            resources.GetString("comboBox_mbc5MultiCartSelect.Items11"),
+            resources.GetString("comboBox_mbc5MultiCartSelect.Items12"),
+            resources.GetString("comboBox_mbc5MultiCartSelect.Items13"),
+            resources.GetString("comboBox_mbc5MultiCartSelect.Items14"),
+            resources.GetString("comboBox_mbc5MultiCartSelect.Items15"),
+            resources.GetString("comboBox_mbc5MultiCartSelect.Items16"),
+            resources.GetString("comboBox_mbc5MultiCartSelect.Items17")});
             this.comboBox_mbc5MultiCartSelect.Name = "comboBox_mbc5MultiCartSelect";
-            this.comboBox_mbc5MultiCartSelect.Size = new System.Drawing.Size(77, 20);
-            this.comboBox_mbc5MultiCartSelect.TabIndex = 39;
             this.comboBox_mbc5MultiCartSelect.SelectedIndexChanged += new System.EventHandler(this.comboBox_mbc5MultiCartSelect_SelectedIndexChanged);
             // 
             // btn_verifyRom_mbc5
             // 
-            this.btn_verifyRom_mbc5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_verifyRom_mbc5.Location = new System.Drawing.Point(475, 11);
+            resources.ApplyResources(this.btn_verifyRom_mbc5, "btn_verifyRom_mbc5");
             this.btn_verifyRom_mbc5.Name = "btn_verifyRom_mbc5";
-            this.btn_verifyRom_mbc5.Size = new System.Drawing.Size(75, 23);
-            this.btn_verifyRom_mbc5.TabIndex = 31;
-            this.btn_verifyRom_mbc5.Text = "校验ROM";
             this.btn_verifyRom_mbc5.UseVisualStyleBackColor = true;
             this.btn_verifyRom_mbc5.Click += new System.EventHandler(this.btn_verifyRom_mbc5_Click);
             // 
             // btn_verifySave_mbc5
             // 
-            this.btn_verifySave_mbc5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_verifySave_mbc5.Location = new System.Drawing.Point(475, 40);
+            resources.ApplyResources(this.btn_verifySave_mbc5, "btn_verifySave_mbc5");
             this.btn_verifySave_mbc5.Name = "btn_verifySave_mbc5";
-            this.btn_verifySave_mbc5.Size = new System.Drawing.Size(75, 23);
-            this.btn_verifySave_mbc5.TabIndex = 34;
-            this.btn_verifySave_mbc5.Text = "校验存档";
             this.btn_verifySave_mbc5.UseVisualStyleBackColor = true;
             this.btn_verifySave_mbc5.Click += new System.EventHandler(this.btn_verifySave_mbc5_Click);
             // 
             // comboBox_saveSize_mbc5
             // 
-            this.comboBox_saveSize_mbc5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.comboBox_saveSize_mbc5, "comboBox_saveSize_mbc5");
             this.comboBox_saveSize_mbc5.DropDownWidth = 55;
             this.comboBox_saveSize_mbc5.FormattingEnabled = true;
             this.comboBox_saveSize_mbc5.Items.AddRange(new object[] {
-            "8",
-            "16",
-            "32",
-            "128",
-            "512"});
-            this.comboBox_saveSize_mbc5.Location = new System.Drawing.Point(89, 42);
+            resources.GetString("comboBox_saveSize_mbc5.Items"),
+            resources.GetString("comboBox_saveSize_mbc5.Items1"),
+            resources.GetString("comboBox_saveSize_mbc5.Items2"),
+            resources.GetString("comboBox_saveSize_mbc5.Items3"),
+            resources.GetString("comboBox_saveSize_mbc5.Items4")});
             this.comboBox_saveSize_mbc5.Name = "comboBox_saveSize_mbc5";
-            this.comboBox_saveSize_mbc5.Size = new System.Drawing.Size(68, 20);
-            this.comboBox_saveSize_mbc5.TabIndex = 37;
             // 
             // comboBox_romSize_mbc5
             // 
-            this.comboBox_romSize_mbc5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.comboBox_romSize_mbc5, "comboBox_romSize_mbc5");
             this.comboBox_romSize_mbc5.FormattingEnabled = true;
             this.comboBox_romSize_mbc5.Items.AddRange(new object[] {
-            "1.0",
-            "2.0",
-            "8.0",
-            "32.0"});
-            this.comboBox_romSize_mbc5.Location = new System.Drawing.Point(89, 13);
+            resources.GetString("comboBox_romSize_mbc5.Items"),
+            resources.GetString("comboBox_romSize_mbc5.Items1"),
+            resources.GetString("comboBox_romSize_mbc5.Items2"),
+            resources.GetString("comboBox_romSize_mbc5.Items3")});
             this.comboBox_romSize_mbc5.Name = "comboBox_romSize_mbc5";
-            this.comboBox_romSize_mbc5.Size = new System.Drawing.Size(68, 20);
-            this.comboBox_romSize_mbc5.TabIndex = 38;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 45);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 12);
-            this.label1.TabIndex = 36;
-            this.label1.Text = "存档大小(KiB)";
             // 
             // btn_readRom_mbc5
             // 
-            this.btn_readRom_mbc5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_readRom_mbc5.Location = new System.Drawing.Point(394, 11);
+            resources.ApplyResources(this.btn_readRom_mbc5, "btn_readRom_mbc5");
             this.btn_readRom_mbc5.Name = "btn_readRom_mbc5";
-            this.btn_readRom_mbc5.Size = new System.Drawing.Size(75, 23);
-            this.btn_readRom_mbc5.TabIndex = 30;
-            this.btn_readRom_mbc5.Text = "导出ROM";
             this.btn_readRom_mbc5.UseVisualStyleBackColor = true;
             this.btn_readRom_mbc5.Click += new System.EventHandler(this.btn_readRom_mbc5_Click);
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 16);
+            resources.ApplyResources(this.label6, "label6");
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(77, 12);
-            this.label6.TabIndex = 35;
-            this.label6.Text = "ROM大小(MiB)";
             // 
             // btn_readSave_mbc5
             // 
-            this.btn_readSave_mbc5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_readSave_mbc5.Location = new System.Drawing.Point(394, 40);
+            resources.ApplyResources(this.btn_readSave_mbc5, "btn_readSave_mbc5");
             this.btn_readSave_mbc5.Name = "btn_readSave_mbc5";
-            this.btn_readSave_mbc5.Size = new System.Drawing.Size(75, 23);
-            this.btn_readSave_mbc5.TabIndex = 33;
-            this.btn_readSave_mbc5.Text = "导出存档";
             this.btn_readSave_mbc5.UseVisualStyleBackColor = true;
             this.btn_readSave_mbc5.Click += new System.EventHandler(this.btn_readSave_mbc5_Click);
             // 
             // btn_writeRom_mbc5
             // 
-            this.btn_writeRom_mbc5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_writeRom_mbc5.Location = new System.Drawing.Point(313, 11);
+            resources.ApplyResources(this.btn_writeRom_mbc5, "btn_writeRom_mbc5");
             this.btn_writeRom_mbc5.Name = "btn_writeRom_mbc5";
-            this.btn_writeRom_mbc5.Size = new System.Drawing.Size(75, 23);
-            this.btn_writeRom_mbc5.TabIndex = 29;
-            this.btn_writeRom_mbc5.Text = "写入ROM";
             this.btn_writeRom_mbc5.UseVisualStyleBackColor = true;
             this.btn_writeRom_mbc5.Click += new System.EventHandler(this.btn_writeRom_mbc5_Click);
             // 
             // btn_writeSave_mbc5
             // 
-            this.btn_writeSave_mbc5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_writeSave_mbc5.Location = new System.Drawing.Point(313, 40);
+            resources.ApplyResources(this.btn_writeSave_mbc5, "btn_writeSave_mbc5");
             this.btn_writeSave_mbc5.Name = "btn_writeSave_mbc5";
-            this.btn_writeSave_mbc5.Size = new System.Drawing.Size(75, 23);
-            this.btn_writeSave_mbc5.TabIndex = 32;
-            this.btn_writeSave_mbc5.Text = "写入存档";
             this.btn_writeSave_mbc5.UseVisualStyleBackColor = true;
             this.btn_writeSave_mbc5.Click += new System.EventHandler(this.btn_writeSave_mbc5_Click);
             // 
@@ -791,100 +619,73 @@
             this.tabPage3.Controls.Add(this.label8);
             this.tabPage3.Controls.Add(this.label7);
             this.tabPage3.Controls.Add(this.btn_unlockPPB_gba);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            resources.ApplyResources(this.tabPage3, "tabPage3");
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(637, 72);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "工具";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // btn_cancel
             // 
-            this.btn_cancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_cancel.Enabled = false;
-            this.btn_cancel.Location = new System.Drawing.Point(556, 11);
+            resources.ApplyResources(this.btn_cancel, "btn_cancel");
             this.btn_cancel.Name = "btn_cancel";
-            this.btn_cancel.Size = new System.Drawing.Size(75, 52);
-            this.btn_cancel.TabIndex = 16;
-            this.btn_cancel.Text = "取消";
             this.btn_cancel.UseVisualStyleBackColor = true;
             this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
             // 
             // btn_rumbleTest_gba
             // 
-            this.btn_rumbleTest_gba.Location = new System.Drawing.Point(208, 8);
+            resources.ApplyResources(this.btn_rumbleTest_gba, "btn_rumbleTest_gba");
             this.btn_rumbleTest_gba.Name = "btn_rumbleTest_gba";
-            this.btn_rumbleTest_gba.Size = new System.Drawing.Size(75, 23);
-            this.btn_rumbleTest_gba.TabIndex = 8;
-            this.btn_rumbleTest_gba.Text = "震动测试";
             this.btn_rumbleTest_gba.UseVisualStyleBackColor = true;
             this.btn_rumbleTest_gba.Click += new System.EventHandler(this.btn_rumbleTest_gba_Click);
             // 
             // btn_setRTC_mbc
             // 
-            this.btn_setRTC_mbc.Location = new System.Drawing.Point(127, 42);
+            resources.ApplyResources(this.btn_setRTC_mbc, "btn_setRTC_mbc");
             this.btn_setRTC_mbc.Name = "btn_setRTC_mbc";
-            this.btn_setRTC_mbc.Size = new System.Drawing.Size(75, 23);
-            this.btn_setRTC_mbc.TabIndex = 7;
-            this.btn_setRTC_mbc.Text = "修改时钟";
             this.btn_setRTC_mbc.UseVisualStyleBackColor = true;
             this.btn_setRTC_mbc.Click += new System.EventHandler(this.btn_setRTC_mbc_Click);
             // 
             // btn_setRTC_gba
             // 
-            this.btn_setRTC_gba.Location = new System.Drawing.Point(127, 8);
+            resources.ApplyResources(this.btn_setRTC_gba, "btn_setRTC_gba");
             this.btn_setRTC_gba.Name = "btn_setRTC_gba";
-            this.btn_setRTC_gba.Size = new System.Drawing.Size(75, 23);
-            this.btn_setRTC_gba.TabIndex = 6;
-            this.btn_setRTC_gba.Text = "修改时钟";
             this.btn_setRTC_gba.UseVisualStyleBackColor = true;
             this.btn_setRTC_gba.Click += new System.EventHandler(this.btn_setRTC_gba_Click);
             // 
             // btn_unlockPPB_mbc5
             // 
-            this.btn_unlockPPB_mbc5.Location = new System.Drawing.Point(46, 42);
+            resources.ApplyResources(this.btn_unlockPPB_mbc5, "btn_unlockPPB_mbc5");
             this.btn_unlockPPB_mbc5.Name = "btn_unlockPPB_mbc5";
-            this.btn_unlockPPB_mbc5.Size = new System.Drawing.Size(75, 23);
-            this.btn_unlockPPB_mbc5.TabIndex = 5;
-            this.btn_unlockPPB_mbc5.Text = "解锁ppb";
             this.btn_unlockPPB_mbc5.UseVisualStyleBackColor = true;
             this.btn_unlockPPB_mbc5.Click += new System.EventHandler(this.btn_unlockPPB_mbc5_Click);
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(6, 47);
+            resources.ApplyResources(this.label8, "label8");
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(23, 12);
-            this.label8.TabIndex = 4;
-            this.label8.Text = "MBC";
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(6, 13);
+            resources.ApplyResources(this.label7, "label7");
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(23, 12);
-            this.label7.TabIndex = 3;
-            this.label7.Text = "GBA";
             // 
             // btn_unlockPPB_gba
             // 
-            this.btn_unlockPPB_gba.Location = new System.Drawing.Point(46, 8);
+            resources.ApplyResources(this.btn_unlockPPB_gba, "btn_unlockPPB_gba");
             this.btn_unlockPPB_gba.Name = "btn_unlockPPB_gba";
-            this.btn_unlockPPB_gba.Size = new System.Drawing.Size(75, 23);
-            this.btn_unlockPPB_gba.TabIndex = 2;
-            this.btn_unlockPPB_gba.Text = "解锁ppb";
             this.btn_unlockPPB_gba.UseVisualStyleBackColor = true;
             this.btn_unlockPPB_gba.Click += new System.EventHandler(this.btn_unlockPPB_gba_Click);
+            // 
+            // label9
+            // 
+            resources.ApplyResources(this.label9, "label9");
+            this.label9.Name = "label9";
             // 
             // Form1
             // 
             this.AllowDrop = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(669, 473);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.btn_renewPort);
             this.Controls.Add(this.btn_browseSave);
@@ -898,9 +699,7 @@
             this.Controls.Add(this.comboBox_com);
             this.Controls.Add(this.textBox_romPath);
             this.Controls.Add(this.btn_browseRom);
-            this.MinimumSize = new System.Drawing.Size(685, 512);
             this.Name = "Form1";
-            this.Text = "ChisFlash Burner";
             this.DragDrop += new System.Windows.Forms.DragEventHandler(this.Form1_DragDrop);
             this.DragEnter += new System.Windows.Forms.DragEventHandler(this.Form1_DragEnter);
             this.statusStrip1.ResumeLayout(false);
@@ -975,6 +774,7 @@
         private System.Windows.Forms.Button btn_cancel;
         private System.Windows.Forms.ComboBox comboBox_mbcType;
         private System.Windows.Forms.CheckBox checkBox_mbc5V;
+        private System.Windows.Forms.Label label9;
     }
 }
 

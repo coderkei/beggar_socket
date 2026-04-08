@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Globalization;
 
 namespace ChisFlashBurner
 {
@@ -142,7 +143,14 @@ namespace ChisFlashBurner
             int sectorMask = sectorSize - 1;
             addrTo &= ~sectorMask;
 
-            printLog(string.Format("擦除 0x{0:x8} - 0x{1:x8}", addrFrom, addrTo));
+            if (systemCulture.Name.StartsWith("zh"))
+            {
+                printLog(string.Format("擦除 0x{0:x8} - 0x{1:x8}", addrFrom, addrTo));
+            }
+            else
+            {
+                printLog(string.Format("Erase 0x{0:x8} - 0x{1:x8}", addrFrom, addrTo));
+            }
 
             int currentBank = -1;
 
@@ -155,7 +163,14 @@ namespace ChisFlashBurner
                     int bank = sa / (32 / 2 * 1024 * 1024);
                     if (bank != currentBank)
                     {
-                        printLog(string.Format("切换至Bank {0}", bank));
+                        if (systemCulture.Name.StartsWith("zh"))
+                        {
+                            printLog(string.Format("切换至Bank {0}", bank));
+                        }
+                        else
+                        {
+                            printLog(string.Format("Switching to Bank {0}", bank));
+                        }
                         gba_romSwitchBank(bank);
                         currentBank = bank;
                     }
@@ -237,13 +252,29 @@ namespace ChisFlashBurner
             else if (id.SequenceEqual(new byte[] { 0x20, 0x00, 0x7E, 0x22, 0x22, 0x22, 0x01, 0x22 }))
                 printLog("M29W256G");
             else
-                printLog("ID暂未收录，可能无法写入");
+            {
+                if (systemCulture.Name.StartsWith("zh"))
+                {
+                    printLog("ID暂未收录，可能无法写入");
+                }
+                else
+                {
+                    printLog("The ID is not recognized and may not be writable.");
+                }
+            }
 
             // cfi
             int deviceSize, sectorCount, sectorSize, bufferWriteBytes;
             gba_romGetSize(out sectorCount, out sectorSize, out bufferWriteBytes, out deviceSize);
 
-            printLog(string.Format("容量:{0:d} 扇区数量:{1:d} 扇区大小:{2:d} BuffWr:{3:d}", deviceSize, sectorCount, sectorSize, bufferWriteBytes));
+            if (systemCulture.Name.StartsWith("zh"))
+            {
+                printLog(string.Format("容量:{0:d} 扇区数量:{1:d} 扇区大小:{2:d} BuffWr:{3:d}", deviceSize, sectorCount, sectorSize, bufferWriteBytes));
+            }
+            else
+            {
+                printLog(string.Format("Size:{0:d} Sectors:{1:d} Sector Size:{2:d} BuffWr:{3:d}", deviceSize, sectorCount, sectorSize, bufferWriteBytes));
+            }
 
             // 合卡信息
             if (deviceSize > 32 * 1024 * 1024)
@@ -266,7 +297,14 @@ namespace ChisFlashBurner
                         if (!found)
                         {
                             found = true;
-                            printLog("以下位置存在游戏");
+                            if (systemCulture.Name.StartsWith("zh"))
+                            {
+                                printLog("以下位置存在游戏");
+                            }
+                            else
+                            {
+                                printLog("The game exists in the following location.");
+                            }
                         }
 
                         string gameName = Encoding.UTF8.GetString(header, 160, 12).TrimEnd('\0');
@@ -328,7 +366,14 @@ namespace ChisFlashBurner
             if (isS70GL02)
             {
                 gba_romSwitchBank(4);
-                printLog("02G再擦1次");
+                if (systemCulture.Name.StartsWith("zh"))
+                {
+                    printLog("02G再擦1次");
+                }
+                else
+                {
+                    printLog("Apply 02G again");
+                }
 
                 // 擦
                 rom_eraseChip();
@@ -352,8 +397,17 @@ namespace ChisFlashBurner
             }
 
             stopwatch.Stop();
-            printLog("擦除完毕");
-            printLog(string.Format("擦除耗时 {0:f3} s", stopwatch.ElapsedMilliseconds / 1000.0f));
+
+            if (systemCulture.Name.StartsWith("zh"))
+            {
+                printLog("擦除完毕");
+                printLog(string.Format("擦除耗时 {0:f3} s", stopwatch.ElapsedMilliseconds / 1000.0f));
+            }
+            else
+            {
+                printLog("Erasing complete");
+                printLog(string.Format("Erasing time {0:f3} s", stopwatch.ElapsedMilliseconds / 1000.0f));
+            }
 
             port.Close();
             enableButton();
@@ -371,7 +425,14 @@ namespace ChisFlashBurner
             }
             catch
             {
-                printLog("文件被占用");
+                if (systemCulture.Name.StartsWith("zh"))
+                {
+                    printLog("文件被占用");
+                }
+                else
+                {
+                    printLog("File is in use.");
+                }
                 port.Close();
                 enableButton();
                 return;
@@ -410,7 +471,14 @@ namespace ChisFlashBurner
             // 检查rom容量
             if ((addrEnd + 1) > deviceSize)
             {
-                printLog(string.Format("Flash 空间不足 需要{0:d} 剩余{1:d}", romBufSize, deviceSize - addrBegin));
+                if (systemCulture.Name.StartsWith("zh"))
+                {
+                    printLog(string.Format("Flash 空间不足 需要{0:d} 剩余{1:d}", romBufSize, deviceSize - addrBegin));
+                }
+                else
+                {
+                    printLog(string.Format("Insufficient space on Flash{0:d} Remaining{1:d}", romBufSize, deviceSize - addrBegin));
+                }
                 port.Close();
                 enableButton();
                 return;
@@ -433,10 +501,24 @@ namespace ChisFlashBurner
                 gba_romEraseSector(addrBegin, addrEnd, sectorSize, isMultiCard);
 
                 swErase.Stop();
-                printLog(string.Format("擦除耗时 {0:f3} s", swErase.ElapsedMilliseconds / 1000.0f));
+                if (systemCulture.Name.StartsWith("zh"))
+                {
+                    printLog(string.Format("擦除耗时 {0:f3} s", swErase.ElapsedMilliseconds / 1000.0f));
+                }
+                else
+                {
+                    printLog(string.Format("Erasing time {0:f3} s", swErase.ElapsedMilliseconds / 1000.0f));
+                }
             }
 
-            printLog("开始写入");
+            if (systemCulture.Name.StartsWith("zh"))
+            {
+                printLog("开始写入");
+            }
+            else
+            {
+                printLog("Start writing");
+            }
 
             // 开始发送
             Stopwatch stopwatch = new Stopwatch();
@@ -462,7 +544,14 @@ namespace ChisFlashBurner
                     int bank = romAddress / (32 * 1024 * 1024);
                     if (bank != currentBank)
                     {
-                        printLog(string.Format("切换至Bank {0}", bank));
+                        if (systemCulture.Name.StartsWith("zh"))
+                        {
+                            printLog(string.Format("切换至Bank {0}", bank));
+                        }
+                        else
+                        {
+                            printLog(string.Format("Switching to Bank {0}", bank));
+                        }
                         gba_romSwitchBank(bank);
                         currentBank = bank;
                     }
@@ -494,7 +583,14 @@ namespace ChisFlashBurner
             }
             catch
             {
-                printLog("文件被占用");
+                if (systemCulture.Name.StartsWith("zh"))
+                {
+                    printLog("文件被占用");
+                }
+                else
+                {
+                    printLog("The file is in use.");
+                }
                 port.Close();
                 enableButton();
                 return;
@@ -522,7 +618,14 @@ namespace ChisFlashBurner
                 fileLength = deviceSize - addrBegin;
                 if (fileLength <= 0)
                 {
-                    printLog("该地址无数据");
+                    if (systemCulture.Name.StartsWith("zh"))
+                    {
+                        printLog("该地址无数据");
+                    }
+                    else
+                    {
+                        printLog("No data found at this address.");
+                    }
                     file.Close();
                     port.Close();
                     enableButton();
@@ -551,7 +654,14 @@ namespace ChisFlashBurner
                     int bank = romAddress / (32 * 1024 * 1024);
                     if (bank != currentBank)
                     {
-                        printLog(string.Format("切换至Bank {0}", bank));
+                        if (systemCulture.Name.StartsWith("zh"))
+                        {
+                            printLog(string.Format("切换至Bank {0}", bank));
+                        }
+                        else
+                        {
+                            printLog(string.Format("Switching to Bank {0}", bank));
+                        }
                         gba_romSwitchBank(bank);
                         currentBank = bank;
                     }
@@ -592,7 +702,14 @@ namespace ChisFlashBurner
             }
             catch
             {
-                printLog("文件被占用");
+                if (systemCulture.Name.StartsWith("zh"))
+                {
+                    printLog("文件被占用");
+                }
+                else
+                {
+                    printLog("The file is in use.");
+                }
                 port.Close();
                 enableButton();
                 return;
@@ -632,7 +749,14 @@ namespace ChisFlashBurner
                 romBufSize = deviceSize - addrBegin;
                 if (romBufSize <= 0)
                 {
-                    printLog("该地址无数据");
+                    if (systemCulture.Name.StartsWith("zh"))
+                    {
+                        printLog("该地址无数据");
+                    }
+                    else
+                    {
+                        printLog("No data found at this address.");
+                    }
                     port.Close();
                     enableButton();
                     return;
@@ -661,7 +785,14 @@ namespace ChisFlashBurner
                     int bank = romAddress / (32 * 1024 * 1024);
                     if (bank != currentBank)
                     {
-                        printLog(string.Format("切换至Bank {0}", bank));
+                        if (systemCulture.Name.StartsWith("zh"))
+                        {
+                            printLog(string.Format("切换至Bank {0}", bank));
+                        }
+                        else
+                        {
+                            printLog(string.Format("Switching to bank {0}", bank));
+                        }
                         gba_romSwitchBank(bank);
                         currentBank = bank;
                     }
@@ -675,12 +806,25 @@ namespace ChisFlashBurner
                 {
                     if (rom[readCount + i] != respon[i])
                     {
-                        printLog(string.Format(
-                            "0x{0:x8}校验失败，{1:x2} -> {2:x2}",
-                            readCount + i,
-                            rom[readCount + i],
-                            respon[i]
-                        ));
+                        if (systemCulture.Name.StartsWith("zh"))
+                        {
+                            printLog(string.Format(
+                                "0x{0:x8}校验失败，{1:x2} -> {2:x2}",
+                                readCount + i,
+                                rom[readCount + i],
+                                respon[i]
+                            ));
+                        }
+                        else
+                        {
+                            printLog(string.Format(
+                                "0x{0:x8}Verification Failed，{1:x2} -> {2:x2}",
+                                readCount + i,
+                                rom[readCount + i],
+                                respon[i]
+                            ));
+                        }
+
                     }
                 }
                 readCount += readLen;
@@ -706,7 +850,14 @@ namespace ChisFlashBurner
             }
             catch
             {
-                printLog("文件被占用");
+                if (systemCulture.Name.StartsWith("zh"))
+                {
+                    printLog("文件被占用");
+                }
+                else
+                {
+                    printLog("The file is in use");
+                }
                 port.Close();
                 enableButton();
                 return;
@@ -725,7 +876,14 @@ namespace ChisFlashBurner
             if (comboBox_ramType.Text == "FLASH")
             {
                 // 擦除flash
-                printLog("擦除flash");
+                if (systemCulture.Name.StartsWith("zh"))
+                {
+                    printLog("擦除flash");
+                }
+                else
+                {
+                    printLog("Erase Flash");
+                }
                 ram_write(0x5555, new byte[] { 0xaa });
                 ram_write(0x2aaa, new byte[] { 0x55 });
                 ram_write(0x5555, new byte[] { 0x80 });

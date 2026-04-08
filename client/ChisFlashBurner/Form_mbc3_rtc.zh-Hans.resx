@@ -132,7 +132,7 @@
     <value>11</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
-    <value>Day</value>
+    <value>日</value>
   </data>
   <data name="&gt;&gt;label3.Name" xml:space="preserve">
     <value>label3</value>
@@ -243,7 +243,7 @@
     <value>18</value>
   </data>
   <data name="label7.Text" xml:space="preserve">
-    <value>Second</value>
+    <value>秒</value>
   </data>
   <data name="&gt;&gt;label7.Name" xml:space="preserve">
     <value>label7</value>
@@ -270,7 +270,7 @@
     <value>17</value>
   </data>
   <data name="label6.Text" xml:space="preserve">
-    <value>Minute</value>
+    <value>分</value>
   </data>
   <data name="&gt;&gt;label6.Name" xml:space="preserve">
     <value>label6</value>
@@ -297,7 +297,7 @@
     <value>16</value>
   </data>
   <data name="label5.Text" xml:space="preserve">
-    <value>Hour</value>
+    <value>时</value>
   </data>
   <data name="&gt;&gt;label5.Name" xml:space="preserve">
     <value>label5</value>
@@ -335,9 +335,9 @@
   <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="$this.Localizable" type="System.Boolean, mscorlib">
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
-  </data>
+  </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
   </data>

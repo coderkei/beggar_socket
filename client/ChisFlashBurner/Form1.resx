@@ -117,13 +117,1963 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="statusStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btn_browseRom.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btn_browseRom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>468, 11</value>
+  </data>
+  <data name="btn_browseRom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 25</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btn_browseRom.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btn_browseRom.Text" xml:space="preserve">
+    <value>Browse</value>
+  </data>
+  <data name="&gt;&gt;btn_browseRom.Name" xml:space="preserve">
+    <value>btn_browseRom</value>
+  </data>
+  <data name="&gt;&gt;btn_browseRom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_browseRom.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_browseRom.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="textBox_romPath.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="textBox_romPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 13</value>
+  </data>
+  <data name="textBox_romPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>416, 20</value>
+  </data>
+  <data name="textBox_romPath.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;textBox_romPath.Name" xml:space="preserve">
+    <value>textBox_romPath</value>
+  </data>
+  <data name="&gt;&gt;textBox_romPath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_romPath.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBox_romPath.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="comboBox_com.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="comboBox_com.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <data name="comboBox_com.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 9pt</value>
+  </data>
+  <data name="comboBox_com.Location" type="System.Drawing.Point, System.Drawing">
+    <value>534, 13</value>
+  </data>
+  <data name="comboBox_com.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 20</value>
+  </data>
+  <data name="comboBox_com.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;comboBox_com.Name" xml:space="preserve">
+    <value>comboBox_com</value>
+  </data>
+  <data name="&gt;&gt;comboBox_com.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_com.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;comboBox_com.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="btn_readID.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="btn_readID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>597, 42</value>
+  </data>
+  <data name="btn_readID.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 25</value>
+  </data>
+  <data name="btn_readID.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btn_readID.Text" xml:space="preserve">
+    <value>Read ID</value>
+  </data>
+  <data name="&gt;&gt;btn_readID.Name" xml:space="preserve">
+    <value>btn_readID</value>
+  </data>
+  <data name="&gt;&gt;btn_readID.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_readID.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_readID.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="textBox_log.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="textBox_log.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 189</value>
+  </data>
+  <data name="textBox_log.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textBox_log.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Both</value>
+  </data>
+  <data name="textBox_log.Size" type="System.Drawing.Size, System.Drawing">
+    <value>645, 281</value>
+  </data>
+  <data name="textBox_log.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;textBox_log.Name" xml:space="preserve">
+    <value>textBox_log</value>
+  </data>
+  <data name="&gt;&gt;textBox_log.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_log.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBox_log.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="progressBar_total.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left, Right</value>
+  </data>
+  <data name="progressBar_total.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 477</value>
+  </data>
+  <data name="progressBar_total.Size" type="System.Drawing.Size, System.Drawing">
+    <value>645, 25</value>
+  </data>
+  <data name="progressBar_total.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;progressBar_total.Name" xml:space="preserve">
+    <value>progressBar_total</value>
+  </data>
+  <data name="&gt;&gt;progressBar_total.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;progressBar_total.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;progressBar_total.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="statusStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing">
     <value>18, 15</value>
-  </metadata>
-  <metadata name="tmr_showSpeed.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  </data>
+  <data name="label_progress.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 17</value>
+  </data>
+  <data name="label_progress.Text" xml:space="preserve">
+    <value>toolStripStatusLabel1</value>
+  </data>
+  <data name="toolStripStatusLabel2.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="toolStripStatusLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>524, 17</value>
+  </data>
+  <data name="label_speed.Size" type="System.Drawing.Size, System.Drawing">
+    <value>12, 17</value>
+  </data>
+  <data name="label_speed.Text" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="statusStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 511</value>
+  </data>
+  <data name="statusStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>669, 22</value>
+  </data>
+  <data name="statusStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="statusStrip1.Text" xml:space="preserve">
+    <value>statusStrip1</value>
+  </data>
+  <data name="&gt;&gt;statusStrip1.Name" xml:space="preserve">
+    <value>statusStrip1</value>
+  </data>
+  <data name="&gt;&gt;statusStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;statusStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;statusStrip1.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 15</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 13</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>ROM</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 45</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 13</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="textBox_savePath.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="textBox_savePath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 42</value>
+  </data>
+  <data name="textBox_savePath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>416, 20</value>
+  </data>
+  <data name="textBox_savePath.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;textBox_savePath.Name" xml:space="preserve">
+    <value>textBox_savePath</value>
+  </data>
+  <data name="&gt;&gt;textBox_savePath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_savePath.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBox_savePath.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="btn_browseSave.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="btn_browseSave.Location" type="System.Drawing.Point, System.Drawing">
+    <value>468, 41</value>
+  </data>
+  <data name="btn_browseSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 25</value>
+  </data>
+  <data name="btn_browseSave.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="btn_browseSave.Text" xml:space="preserve">
+    <value>Browse</value>
+  </data>
+  <data name="&gt;&gt;btn_browseSave.Name" xml:space="preserve">
+    <value>btn_browseSave</value>
+  </data>
+  <data name="&gt;&gt;btn_browseSave.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_browseSave.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_browseSave.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btn_eraseChip.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="btn_eraseChip.Location" type="System.Drawing.Point, System.Drawing">
+    <value>556, 12</value>
+  </data>
+  <data name="btn_eraseChip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 56</value>
+  </data>
+  <data name="btn_eraseChip.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="btn_eraseChip.Text" xml:space="preserve">
+    <value>Erase All</value>
+  </data>
+  <data name="&gt;&gt;btn_eraseChip.Name" xml:space="preserve">
+    <value>btn_eraseChip</value>
+  </data>
+  <data name="&gt;&gt;btn_eraseChip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_eraseChip.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;btn_eraseChip.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btn_writeRom.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="btn_writeRom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>313, 12</value>
+  </data>
+  <data name="btn_writeRom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 25</value>
+  </data>
+  <data name="btn_writeRom.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="btn_writeRom.Text" xml:space="preserve">
+    <value>Write ROM</value>
+  </data>
+  <data name="&gt;&gt;btn_writeRom.Name" xml:space="preserve">
+    <value>btn_writeRom</value>
+  </data>
+  <data name="&gt;&gt;btn_writeRom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_writeRom.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;btn_writeRom.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="btn_readRom.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="btn_readRom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>394, 12</value>
+  </data>
+  <data name="btn_readRom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 25</value>
+  </data>
+  <data name="btn_readRom.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="btn_readRom.Text" xml:space="preserve">
+    <value>Export ROM</value>
+  </data>
+  <data name="&gt;&gt;btn_readRom.Name" xml:space="preserve">
+    <value>btn_readRom</value>
+  </data>
+  <data name="&gt;&gt;btn_readRom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_readRom.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;btn_readRom.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="btn_verifyRom.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="btn_verifyRom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>475, 12</value>
+  </data>
+  <data name="btn_verifyRom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 25</value>
+  </data>
+  <data name="btn_verifyRom.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="btn_verifyRom.Text" xml:space="preserve">
+    <value>Verify ROM</value>
+  </data>
+  <data name="&gt;&gt;btn_verifyRom.Name" xml:space="preserve">
+    <value>btn_verifyRom</value>
+  </data>
+  <data name="&gt;&gt;btn_verifyRom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_verifyRom.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;btn_verifyRom.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btn_writeSave.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="btn_writeSave.Location" type="System.Drawing.Point, System.Drawing">
+    <value>313, 43</value>
+  </data>
+  <data name="btn_writeSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 25</value>
+  </data>
+  <data name="btn_writeSave.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="btn_writeSave.Text" xml:space="preserve">
+    <value>Write Save</value>
+  </data>
+  <data name="&gt;&gt;btn_writeSave.Name" xml:space="preserve">
+    <value>btn_writeSave</value>
+  </data>
+  <data name="&gt;&gt;btn_writeSave.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_writeSave.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;btn_writeSave.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="btn_readSave.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="btn_readSave.Location" type="System.Drawing.Point, System.Drawing">
+    <value>394, 43</value>
+  </data>
+  <data name="btn_readSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 25</value>
+  </data>
+  <data name="btn_readSave.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="btn_readSave.Text" xml:space="preserve">
+    <value>Export Save</value>
+  </data>
+  <data name="&gt;&gt;btn_readSave.Name" xml:space="preserve">
+    <value>btn_readSave</value>
+  </data>
+  <data name="&gt;&gt;btn_readSave.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_readSave.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;btn_readSave.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="btn_verifySave.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="btn_verifySave.Location" type="System.Drawing.Point, System.Drawing">
+    <value>475, 43</value>
+  </data>
+  <data name="btn_verifySave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 25</value>
+  </data>
+  <data name="btn_verifySave.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="btn_verifySave.Text" xml:space="preserve">
+    <value>Verify Save</value>
+  </data>
+  <data name="&gt;&gt;btn_verifySave.Name" xml:space="preserve">
+    <value>btn_verifySave</value>
+  </data>
+  <data name="&gt;&gt;btn_verifySave.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_verifySave.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;btn_verifySave.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 17</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 13</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>ROM Size (MiB)</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 49</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 13</value>
+  </data>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Save Size (KiB)</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="comboBox_saveSize.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="comboBox_saveSize.Items" xml:space="preserve">
+    <value>64</value>
+  </data>
+  <data name="comboBox_saveSize.Items1" xml:space="preserve">
+    <value>128</value>
+  </data>
+  <data name="comboBox_saveSize.Location" type="System.Drawing.Point, System.Drawing">
+    <value>95, 46</value>
+  </data>
+  <data name="comboBox_saveSize.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 21</value>
+  </data>
+  <data name="comboBox_saveSize.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;comboBox_saveSize.Name" xml:space="preserve">
+    <value>comboBox_saveSize</value>
+  </data>
+  <data name="&gt;&gt;comboBox_saveSize.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_saveSize.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;comboBox_saveSize.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="comboBox_romSize.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="comboBox_romSize.Location" type="System.Drawing.Point, System.Drawing">
+    <value>95, 14</value>
+  </data>
+  <data name="comboBox_romSize.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 21</value>
+  </data>
+  <data name="comboBox_romSize.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;comboBox_romSize.Name" xml:space="preserve">
+    <value>comboBox_romSize</value>
+  </data>
+  <data name="&gt;&gt;comboBox_romSize.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_romSize.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;comboBox_romSize.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="tmr_showSpeed.TrayLocation" type="System.Drawing.Point, System.Drawing">
     <value>355, 15</value>
-  </metadata>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  </data>
+  <data name="btn_renewPort.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="btn_renewPort.Location" type="System.Drawing.Point, System.Drawing">
+    <value>534, 42</value>
+  </data>
+  <data name="btn_renewPort.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 25</value>
+  </data>
+  <data name="btn_renewPort.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="btn_renewPort.Text" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="&gt;&gt;btn_renewPort.Name" xml:space="preserve">
+    <value>btn_renewPort</value>
+  </data>
+  <data name="&gt;&gt;btn_renewPort.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_renewPort.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_renewPort.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="comboBox_ramType.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="comboBox_ramType.Items" xml:space="preserve">
+    <value>FLASH</value>
+  </data>
+  <data name="comboBox_ramType.Items1" xml:space="preserve">
+    <value>SRAM</value>
+  </data>
+  <data name="comboBox_ramType.Items2" xml:space="preserve">
+    <value>FRAM</value>
+  </data>
+  <data name="comboBox_ramType.Items3" xml:space="preserve">
+    <value>Batteryless</value>
+  </data>
+  <data name="comboBox_ramType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>213, 46</value>
+  </data>
+  <data name="comboBox_ramType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 21</value>
+  </data>
+  <data name="comboBox_ramType.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;comboBox_ramType.Name" xml:space="preserve">
+    <value>comboBox_ramType</value>
+  </data>
+  <data name="&gt;&gt;comboBox_ramType.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_ramType.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;comboBox_ramType.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tabControl1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items" xml:space="preserve">
+    <value>Full Cart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items1" xml:space="preserve">
+    <value>Multicart Menu</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items2" xml:space="preserve">
+    <value>8M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items3" xml:space="preserve">
+    <value>12M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items4" xml:space="preserve">
+    <value>16M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items5" xml:space="preserve">
+    <value>20M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items6" xml:space="preserve">
+    <value>24M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items7" xml:space="preserve">
+    <value>28M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items8" xml:space="preserve">
+    <value>32M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items9" xml:space="preserve">
+    <value>36M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items10" xml:space="preserve">
+    <value>40M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items11" xml:space="preserve">
+    <value>44M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items12" xml:space="preserve">
+    <value>48M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items13" xml:space="preserve">
+    <value>52M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items14" xml:space="preserve">
+    <value>56M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items15" xml:space="preserve">
+    <value>60M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items16" xml:space="preserve">
+    <value>64M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items17" xml:space="preserve">
+    <value>68M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items18" xml:space="preserve">
+    <value>72M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items19" xml:space="preserve">
+    <value>76M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items20" xml:space="preserve">
+    <value>80M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items21" xml:space="preserve">
+    <value>84M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items22" xml:space="preserve">
+    <value>88M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items23" xml:space="preserve">
+    <value>92M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items24" xml:space="preserve">
+    <value>96M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items25" xml:space="preserve">
+    <value>100M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items26" xml:space="preserve">
+    <value>104M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items27" xml:space="preserve">
+    <value>108M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items28" xml:space="preserve">
+    <value>112M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items29" xml:space="preserve">
+    <value>116M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items30" xml:space="preserve">
+    <value>120M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items31" xml:space="preserve">
+    <value>124M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items32" xml:space="preserve">
+    <value>128M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items33" xml:space="preserve">
+    <value>132M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items34" xml:space="preserve">
+    <value>136M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items35" xml:space="preserve">
+    <value>140M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items36" xml:space="preserve">
+    <value>144M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items37" xml:space="preserve">
+    <value>148M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items38" xml:space="preserve">
+    <value>152M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items39" xml:space="preserve">
+    <value>156M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items40" xml:space="preserve">
+    <value>160M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items41" xml:space="preserve">
+    <value>164M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items42" xml:space="preserve">
+    <value>168M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items43" xml:space="preserve">
+    <value>172M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items44" xml:space="preserve">
+    <value>176M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items45" xml:space="preserve">
+    <value>180M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items46" xml:space="preserve">
+    <value>184M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items47" xml:space="preserve">
+    <value>188M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items48" xml:space="preserve">
+    <value>192M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items49" xml:space="preserve">
+    <value>196M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items50" xml:space="preserve">
+    <value>200M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items51" xml:space="preserve">
+    <value>204M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items52" xml:space="preserve">
+    <value>208M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items53" xml:space="preserve">
+    <value>212M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items54" xml:space="preserve">
+    <value>216M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items55" xml:space="preserve">
+    <value>220M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items56" xml:space="preserve">
+    <value>224M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items57" xml:space="preserve">
+    <value>228M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items58" xml:space="preserve">
+    <value>232M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items59" xml:space="preserve">
+    <value>236M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items60" xml:space="preserve">
+    <value>240M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items61" xml:space="preserve">
+    <value>244M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items62" xml:space="preserve">
+    <value>248M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items63" xml:space="preserve">
+    <value>252M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items64" xml:space="preserve">
+    <value>256M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items65" xml:space="preserve">
+    <value>260M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items66" xml:space="preserve">
+    <value>264M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items67" xml:space="preserve">
+    <value>268M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items68" xml:space="preserve">
+    <value>272M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items69" xml:space="preserve">
+    <value>276M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items70" xml:space="preserve">
+    <value>280M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items71" xml:space="preserve">
+    <value>284M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items72" xml:space="preserve">
+    <value>288M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items73" xml:space="preserve">
+    <value>292M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items74" xml:space="preserve">
+    <value>296M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items75" xml:space="preserve">
+    <value>300M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items76" xml:space="preserve">
+    <value>304M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items77" xml:space="preserve">
+    <value>308M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items78" xml:space="preserve">
+    <value>312M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items79" xml:space="preserve">
+    <value>316M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items80" xml:space="preserve">
+    <value>320M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items81" xml:space="preserve">
+    <value>324M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items82" xml:space="preserve">
+    <value>328M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items83" xml:space="preserve">
+    <value>332M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items84" xml:space="preserve">
+    <value>336M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items85" xml:space="preserve">
+    <value>340M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items86" xml:space="preserve">
+    <value>344M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items87" xml:space="preserve">
+    <value>348M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items88" xml:space="preserve">
+    <value>352M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items89" xml:space="preserve">
+    <value>356M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items90" xml:space="preserve">
+    <value>360M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items91" xml:space="preserve">
+    <value>364M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items92" xml:space="preserve">
+    <value>368M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items93" xml:space="preserve">
+    <value>372M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items94" xml:space="preserve">
+    <value>376M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items95" xml:space="preserve">
+    <value>380M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items96" xml:space="preserve">
+    <value>384M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items97" xml:space="preserve">
+    <value>388M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items98" xml:space="preserve">
+    <value>392M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items99" xml:space="preserve">
+    <value>396M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items100" xml:space="preserve">
+    <value>400M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items101" xml:space="preserve">
+    <value>404M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items102" xml:space="preserve">
+    <value>408M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items103" xml:space="preserve">
+    <value>412M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items104" xml:space="preserve">
+    <value>416M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items105" xml:space="preserve">
+    <value>420M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items106" xml:space="preserve">
+    <value>424M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items107" xml:space="preserve">
+    <value>428M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items108" xml:space="preserve">
+    <value>432M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items109" xml:space="preserve">
+    <value>436M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items110" xml:space="preserve">
+    <value>440M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items111" xml:space="preserve">
+    <value>444M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items112" xml:space="preserve">
+    <value>448M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items113" xml:space="preserve">
+    <value>452M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items114" xml:space="preserve">
+    <value>456M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items115" xml:space="preserve">
+    <value>460M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items116" xml:space="preserve">
+    <value>464M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items117" xml:space="preserve">
+    <value>468M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items118" xml:space="preserve">
+    <value>472M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items119" xml:space="preserve">
+    <value>476M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items120" xml:space="preserve">
+    <value>480M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items121" xml:space="preserve">
+    <value>484M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items122" xml:space="preserve">
+    <value>488M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items123" xml:space="preserve">
+    <value>492M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items124" xml:space="preserve">
+    <value>496M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items125" xml:space="preserve">
+    <value>500M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items126" xml:space="preserve">
+    <value>504M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items127" xml:space="preserve">
+    <value>508M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Items128" xml:space="preserve">
+    <value>512M Multicart</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Location" type="System.Drawing.Point, System.Drawing">
+    <value>213, 14</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 21</value>
+  </data>
+  <data name="comboBox_gbaMultiCartSelect.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="&gt;&gt;comboBox_gbaMultiCartSelect.Name" xml:space="preserve">
+    <value>comboBox_gbaMultiCartSelect</value>
+  </data>
+  <data name="&gt;&gt;comboBox_gbaMultiCartSelect.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_gbaMultiCartSelect.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;comboBox_gbaMultiCartSelect.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabPage1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabPage1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>637, 80</value>
+  </data>
+  <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tabPage1.Text" xml:space="preserve">
+    <value>GBA</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Name" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="checkBox_mbc5V.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="checkBox_mbc5V.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox_mbc5V.Location" type="System.Drawing.Point, System.Drawing">
+    <value>244, 49</value>
+  </data>
+  <data name="checkBox_mbc5V.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 17</value>
+  </data>
+  <data name="checkBox_mbc5V.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="checkBox_mbc5V.Text" xml:space="preserve">
+    <value>5V</value>
+  </data>
+  <data name="&gt;&gt;checkBox_mbc5V.Name" xml:space="preserve">
+    <value>checkBox_mbc5V</value>
+  </data>
+  <data name="&gt;&gt;checkBox_mbc5V.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox_mbc5V.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;checkBox_mbc5V.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="comboBox_mbcType.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="comboBox_mbcType.Items" xml:space="preserve">
+    <value>MBC3</value>
+  </data>
+  <data name="comboBox_mbcType.Items1" xml:space="preserve">
+    <value>MBC5</value>
+  </data>
+  <data name="comboBox_mbcType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>246, 14</value>
+  </data>
+  <data name="comboBox_mbcType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 21</value>
+  </data>
+  <data name="comboBox_mbcType.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="&gt;&gt;comboBox_mbcType.Name" xml:space="preserve">
+    <value>comboBox_mbcType</value>
+  </data>
+  <data name="&gt;&gt;comboBox_mbcType.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_mbcType.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;comboBox_mbcType.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="comboBox_mbc5RamType.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="comboBox_mbc5RamType.Items" xml:space="preserve">
+    <value>SRAM</value>
+  </data>
+  <data name="comboBox_mbc5RamType.Items1" xml:space="preserve">
+    <value>FRAM</value>
+  </data>
+  <data name="comboBox_mbc5RamType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>163, 46</value>
+  </data>
+  <data name="comboBox_mbc5RamType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 21</value>
+  </data>
+  <data name="comboBox_mbc5RamType.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="&gt;&gt;comboBox_mbc5RamType.Name" xml:space="preserve">
+    <value>comboBox_mbc5RamType</value>
+  </data>
+  <data name="&gt;&gt;comboBox_mbc5RamType.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_mbc5RamType.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;comboBox_mbc5RamType.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btn_eraseChip_mbc5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="btn_eraseChip_mbc5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>556, 12</value>
+  </data>
+  <data name="btn_eraseChip_mbc5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 56</value>
+  </data>
+  <data name="btn_eraseChip_mbc5.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="btn_eraseChip_mbc5.Text" xml:space="preserve">
+    <value>Erase All</value>
+  </data>
+  <data name="&gt;&gt;btn_eraseChip_mbc5.Name" xml:space="preserve">
+    <value>btn_eraseChip_mbc5</value>
+  </data>
+  <data name="&gt;&gt;btn_eraseChip_mbc5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_eraseChip_mbc5.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;btn_eraseChip_mbc5.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="comboBox_mbc5MultiCartSelect.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="comboBox_mbc5MultiCartSelect.Items" xml:space="preserve">
+    <value>Full Cart</value>
+  </data>
+  <data name="comboBox_mbc5MultiCartSelect.Items1" xml:space="preserve">
+    <value>Menu</value>
+  </data>
+  <data name="comboBox_mbc5MultiCartSelect.Items2" xml:space="preserve">
+    <value>Multicart 1/4</value>
+  </data>
+  <data name="comboBox_mbc5MultiCartSelect.Items3" xml:space="preserve">
+    <value>Multicart 2/4</value>
+  </data>
+  <data name="comboBox_mbc5MultiCartSelect.Items4" xml:space="preserve">
+    <value>Multicart 3/4</value>
+  </data>
+  <data name="comboBox_mbc5MultiCartSelect.Items5" xml:space="preserve">
+    <value>Multicart 4/4</value>
+  </data>
+  <data name="comboBox_mbc5MultiCartSelect.Items6" xml:space="preserve">
+    <value>5/16  (max)</value>
+  </data>
+  <data name="comboBox_mbc5MultiCartSelect.Items7" xml:space="preserve">
+    <value>6/16  (max)</value>
+  </data>
+  <data name="comboBox_mbc5MultiCartSelect.Items8" xml:space="preserve">
+    <value>7/16  (max)</value>
+  </data>
+  <data name="comboBox_mbc5MultiCartSelect.Items9" xml:space="preserve">
+    <value>8/16  (max)</value>
+  </data>
+  <data name="comboBox_mbc5MultiCartSelect.Items10" xml:space="preserve">
+    <value>9/16  (max)</value>
+  </data>
+  <data name="comboBox_mbc5MultiCartSelect.Items11" xml:space="preserve">
+    <value>10/16 (max)</value>
+  </data>
+  <data name="comboBox_mbc5MultiCartSelect.Items12" xml:space="preserve">
+    <value>11/16 (max)</value>
+  </data>
+  <data name="comboBox_mbc5MultiCartSelect.Items13" xml:space="preserve">
+    <value>12/16 (max)</value>
+  </data>
+  <data name="comboBox_mbc5MultiCartSelect.Items14" xml:space="preserve">
+    <value>13/16 (max)</value>
+  </data>
+  <data name="comboBox_mbc5MultiCartSelect.Items15" xml:space="preserve">
+    <value>14/16 (max)</value>
+  </data>
+  <data name="comboBox_mbc5MultiCartSelect.Items16" xml:space="preserve">
+    <value>15/16 (max)</value>
+  </data>
+  <data name="comboBox_mbc5MultiCartSelect.Items17" xml:space="preserve">
+    <value>16/16 (max)</value>
+  </data>
+  <data name="comboBox_mbc5MultiCartSelect.Location" type="System.Drawing.Point, System.Drawing">
+    <value>163, 14</value>
+  </data>
+  <data name="comboBox_mbc5MultiCartSelect.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 21</value>
+  </data>
+  <data name="comboBox_mbc5MultiCartSelect.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="&gt;&gt;comboBox_mbc5MultiCartSelect.Name" xml:space="preserve">
+    <value>comboBox_mbc5MultiCartSelect</value>
+  </data>
+  <data name="&gt;&gt;comboBox_mbc5MultiCartSelect.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_mbc5MultiCartSelect.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;comboBox_mbc5MultiCartSelect.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="btn_verifyRom_mbc5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="btn_verifyRom_mbc5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>475, 12</value>
+  </data>
+  <data name="btn_verifyRom_mbc5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 25</value>
+  </data>
+  <data name="btn_verifyRom_mbc5.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="btn_verifyRom_mbc5.Text" xml:space="preserve">
+    <value>Verify ROM</value>
+  </data>
+  <data name="&gt;&gt;btn_verifyRom_mbc5.Name" xml:space="preserve">
+    <value>btn_verifyRom_mbc5</value>
+  </data>
+  <data name="&gt;&gt;btn_verifyRom_mbc5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_verifyRom_mbc5.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;btn_verifyRom_mbc5.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="btn_verifySave_mbc5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="btn_verifySave_mbc5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>475, 43</value>
+  </data>
+  <data name="btn_verifySave_mbc5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 25</value>
+  </data>
+  <data name="btn_verifySave_mbc5.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="btn_verifySave_mbc5.Text" xml:space="preserve">
+    <value>Verify Save</value>
+  </data>
+  <data name="&gt;&gt;btn_verifySave_mbc5.Name" xml:space="preserve">
+    <value>btn_verifySave_mbc5</value>
+  </data>
+  <data name="&gt;&gt;btn_verifySave_mbc5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_verifySave_mbc5.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;btn_verifySave_mbc5.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="comboBox_saveSize_mbc5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="comboBox_saveSize_mbc5.Items" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="comboBox_saveSize_mbc5.Items1" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="comboBox_saveSize_mbc5.Items2" xml:space="preserve">
+    <value>32</value>
+  </data>
+  <data name="comboBox_saveSize_mbc5.Items3" xml:space="preserve">
+    <value>128</value>
+  </data>
+  <data name="comboBox_saveSize_mbc5.Items4" xml:space="preserve">
+    <value>512</value>
+  </data>
+  <data name="comboBox_saveSize_mbc5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>89, 46</value>
+  </data>
+  <data name="comboBox_saveSize_mbc5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 21</value>
+  </data>
+  <data name="comboBox_saveSize_mbc5.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="&gt;&gt;comboBox_saveSize_mbc5.Name" xml:space="preserve">
+    <value>comboBox_saveSize_mbc5</value>
+  </data>
+  <data name="&gt;&gt;comboBox_saveSize_mbc5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_saveSize_mbc5.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;comboBox_saveSize_mbc5.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="comboBox_romSize_mbc5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="comboBox_romSize_mbc5.Items" xml:space="preserve">
+    <value>1.0</value>
+  </data>
+  <data name="comboBox_romSize_mbc5.Items1" xml:space="preserve">
+    <value>2.0</value>
+  </data>
+  <data name="comboBox_romSize_mbc5.Items2" xml:space="preserve">
+    <value>8.0</value>
+  </data>
+  <data name="comboBox_romSize_mbc5.Items3" xml:space="preserve">
+    <value>32.0</value>
+  </data>
+  <data name="comboBox_romSize_mbc5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>89, 14</value>
+  </data>
+  <data name="comboBox_romSize_mbc5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 21</value>
+  </data>
+  <data name="comboBox_romSize_mbc5.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="&gt;&gt;comboBox_romSize_mbc5.Name" xml:space="preserve">
+    <value>comboBox_romSize_mbc5</value>
+  </data>
+  <data name="&gt;&gt;comboBox_romSize_mbc5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_romSize_mbc5.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;comboBox_romSize_mbc5.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 49</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 13</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Save Size (KiB)</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="btn_readRom_mbc5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="btn_readRom_mbc5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>394, 12</value>
+  </data>
+  <data name="btn_readRom_mbc5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 25</value>
+  </data>
+  <data name="btn_readRom_mbc5.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="btn_readRom_mbc5.Text" xml:space="preserve">
+    <value>Export ROM</value>
+  </data>
+  <data name="&gt;&gt;btn_readRom_mbc5.Name" xml:space="preserve">
+    <value>btn_readRom_mbc5</value>
+  </data>
+  <data name="&gt;&gt;btn_readRom_mbc5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_readRom_mbc5.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;btn_readRom_mbc5.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 17</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 13</value>
+  </data>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>ROM Size (MiB)</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="btn_readSave_mbc5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="btn_readSave_mbc5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>394, 43</value>
+  </data>
+  <data name="btn_readSave_mbc5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 25</value>
+  </data>
+  <data name="btn_readSave_mbc5.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="btn_readSave_mbc5.Text" xml:space="preserve">
+    <value>Export Save</value>
+  </data>
+  <data name="&gt;&gt;btn_readSave_mbc5.Name" xml:space="preserve">
+    <value>btn_readSave_mbc5</value>
+  </data>
+  <data name="&gt;&gt;btn_readSave_mbc5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_readSave_mbc5.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;btn_readSave_mbc5.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="btn_writeRom_mbc5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="btn_writeRom_mbc5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>313, 12</value>
+  </data>
+  <data name="btn_writeRom_mbc5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 25</value>
+  </data>
+  <data name="btn_writeRom_mbc5.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="btn_writeRom_mbc5.Text" xml:space="preserve">
+    <value>Write ROM</value>
+  </data>
+  <data name="&gt;&gt;btn_writeRom_mbc5.Name" xml:space="preserve">
+    <value>btn_writeRom_mbc5</value>
+  </data>
+  <data name="&gt;&gt;btn_writeRom_mbc5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_writeRom_mbc5.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;btn_writeRom_mbc5.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="btn_writeSave_mbc5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="btn_writeSave_mbc5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>313, 43</value>
+  </data>
+  <data name="btn_writeSave_mbc5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 25</value>
+  </data>
+  <data name="btn_writeSave_mbc5.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="btn_writeSave_mbc5.Text" xml:space="preserve">
+    <value>Write Save</value>
+  </data>
+  <data name="&gt;&gt;btn_writeSave_mbc5.Name" xml:space="preserve">
+    <value>btn_writeSave_mbc5</value>
+  </data>
+  <data name="&gt;&gt;btn_writeSave_mbc5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_writeSave_mbc5.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;btn_writeSave_mbc5.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="tabPage2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabPage2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>637, 80</value>
+  </data>
+  <data name="tabPage2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tabPage2.Text" xml:space="preserve">
+    <value>MBC3/5</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Name" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btn_cancel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="btn_cancel.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="btn_cancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>556, 12</value>
+  </data>
+  <data name="btn_cancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 56</value>
+  </data>
+  <data name="btn_cancel.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="btn_cancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="&gt;&gt;btn_cancel.Name" xml:space="preserve">
+    <value>btn_cancel</value>
+  </data>
+  <data name="&gt;&gt;btn_cancel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_cancel.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;btn_cancel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btn_rumbleTest_gba.Location" type="System.Drawing.Point, System.Drawing">
+    <value>208, 9</value>
+  </data>
+  <data name="btn_rumbleTest_gba.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 25</value>
+  </data>
+  <data name="btn_rumbleTest_gba.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="btn_rumbleTest_gba.Text" xml:space="preserve">
+    <value>Rumble Test</value>
+  </data>
+  <data name="&gt;&gt;btn_rumbleTest_gba.Name" xml:space="preserve">
+    <value>btn_rumbleTest_gba</value>
+  </data>
+  <data name="&gt;&gt;btn_rumbleTest_gba.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_rumbleTest_gba.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;btn_rumbleTest_gba.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btn_setRTC_mbc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>127, 46</value>
+  </data>
+  <data name="btn_setRTC_mbc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 25</value>
+  </data>
+  <data name="btn_setRTC_mbc.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="btn_setRTC_mbc.Text" xml:space="preserve">
+    <value>Set RTC</value>
+  </data>
+  <data name="&gt;&gt;btn_setRTC_mbc.Name" xml:space="preserve">
+    <value>btn_setRTC_mbc</value>
+  </data>
+  <data name="&gt;&gt;btn_setRTC_mbc.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_setRTC_mbc.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;btn_setRTC_mbc.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btn_setRTC_gba.Location" type="System.Drawing.Point, System.Drawing">
+    <value>127, 9</value>
+  </data>
+  <data name="btn_setRTC_gba.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 25</value>
+  </data>
+  <data name="btn_setRTC_gba.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="btn_setRTC_gba.Text" xml:space="preserve">
+    <value>Set RTC</value>
+  </data>
+  <data name="&gt;&gt;btn_setRTC_gba.Name" xml:space="preserve">
+    <value>btn_setRTC_gba</value>
+  </data>
+  <data name="&gt;&gt;btn_setRTC_gba.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_setRTC_gba.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;btn_setRTC_gba.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btn_unlockPPB_mbc5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 46</value>
+  </data>
+  <data name="btn_unlockPPB_mbc5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 25</value>
+  </data>
+  <data name="btn_unlockPPB_mbc5.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="btn_unlockPPB_mbc5.Text" xml:space="preserve">
+    <value>Unlock ppb</value>
+  </data>
+  <data name="&gt;&gt;btn_unlockPPB_mbc5.Name" xml:space="preserve">
+    <value>btn_unlockPPB_mbc5</value>
+  </data>
+  <data name="&gt;&gt;btn_unlockPPB_mbc5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_unlockPPB_mbc5.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;btn_unlockPPB_mbc5.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 51</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 13</value>
+  </data>
+  <data name="label8.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>MBC</value>
+  </data>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
+  </data>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 14</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 13</value>
+  </data>
+  <data name="label7.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>GBA</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="btn_unlockPPB_gba.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 9</value>
+  </data>
+  <data name="btn_unlockPPB_gba.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 25</value>
+  </data>
+  <data name="btn_unlockPPB_gba.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btn_unlockPPB_gba.Text" xml:space="preserve">
+    <value>Unlock ppb</value>
+  </data>
+  <data name="&gt;&gt;btn_unlockPPB_gba.Name" xml:space="preserve">
+    <value>btn_unlockPPB_gba</value>
+  </data>
+  <data name="&gt;&gt;btn_unlockPPB_gba.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_unlockPPB_gba.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;btn_unlockPPB_gba.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="tabPage3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabPage3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabPage3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>637, 80</value>
+  </data>
+  <data name="tabPage3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tabPage3.Text" xml:space="preserve">
+    <value>Tools</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.Name" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 81</value>
+  </data>
+  <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>645, 106</value>
+  </data>
+  <data name="tabControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Name" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>Manually enter a new path if exporting to a new ROM or Save.</value>
+  </data>
+  <data name="$this.Localizable" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.TrayHeight" type="System.Int32, mscorlib">
     <value>77</value>
-  </metadata>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>669, 533</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>685, 551</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>ChisFlash Burner</value>
+  </data>
+  <data name="&gt;&gt;label_progress.Name" xml:space="preserve">
+    <value>label_progress</value>
+  </data>
+  <data name="&gt;&gt;label_progress.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripStatusLabel2.Name" xml:space="preserve">
+    <value>toolStripStatusLabel2</value>
+  </data>
+  <data name="&gt;&gt;toolStripStatusLabel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_speed.Name" xml:space="preserve">
+    <value>label_speed</value>
+  </data>
+  <data name="&gt;&gt;label_speed.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tmr_showSpeed.Name" xml:space="preserve">
+    <value>tmr_showSpeed</value>
+  </data>
+  <data name="&gt;&gt;tmr_showSpeed.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Form1</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label9.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 65</value>
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>297, 13</value>
+  </data>
+  <data name="label9.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;label9.Name" xml:space="preserve">
+    <value>label9</value>
+  </data>
+  <data name="&gt;&gt;label9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
 </root>
